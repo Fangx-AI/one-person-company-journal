@@ -1,0 +1,50 @@
+{
+  "name": "fangxing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "validate:content": "node scripts/validate-content.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "build:journal-index": "node scripts/build-journal-index.mjs",
+    "content:tool": "node scripts/content-tool.mjs",
+    "content:article": "node add_article.cjs",
+    "content:add-slugs": "node scripts/add-journal-slugs.mjs",
+    "sitemap:generate": "node scripts/generate-sitemap.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:postdeploy": "node scripts/post-deploy-check.mjs",
+    "deploy": "npm run build && node scripts/deploy.mjs && npm run check:postdeploy",
+    "prebuild": "npm run optimize:images && npm run build:journal-index && npm run sitemap:generate",
+    "check:release": "npm run validate:content && npm run optimize:images && npm run build:journal-index && npm run lint && npm run typecheck && npm run build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.14.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.0",
+    "vite": "^8.0.4",
+    "xlsx": "^0.18.5"
+  }
+}

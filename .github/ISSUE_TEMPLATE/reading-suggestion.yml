@@ -1,0 +1,19 @@
+name: Reading suggestion
+description: Suggest improvements to README reading paths or archive organization.
+title: "[Reading] "
+labels: ["reading"]
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: What would make the archive easier to read?
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why
+      description: Why would this improve the project?
+    validations:
+      required: false

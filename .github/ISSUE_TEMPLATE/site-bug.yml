@@ -1,0 +1,33 @@
+name: Site bug
+description: Report a website bug or rendering problem.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: https://fxin.cc/
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the exact steps and what happened.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: Windows 11 / Chrome 124
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag screenshots here if useful.
+    validations:
+      required: false

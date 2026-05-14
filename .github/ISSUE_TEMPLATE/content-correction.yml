@@ -1,0 +1,27 @@
+name: Content correction
+description: Report typos, broken links, image issues, or factual corrections.
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Link to the affected page.
+      placeholder: https://fxin.cc/journal/day-94
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What needs to be corrected?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction
+      description: Optional proposed wording or fix.
+    validations:
+      required: false

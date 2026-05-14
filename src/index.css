@@ -1,0 +1,422 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light, neutral surface — pure white like classic editorial sites. */
+  --color-bg: #FFFFFF;
+  --color-surface-soft: #F5F5F5;
+  --color-text: #222222;
+  --color-text-2: #555555;
+  --color-text-3: #999999;
+  --color-divider: #EAEAEA;
+  --color-divider-strong: #DDDDDD;
+
+  /* Mint highlighter for prose links — adopted from xiangyun.rbind.io's
+     classic Hugo academic theme. The single most distinctive editorial
+     touch on the reference site. */
+  --color-highlight: #CBF8DF;
+
+  /* Body font: Palatino-led Western + system Songti CJK fallback, mirroring
+     the classic Hugo academic stack. Zero new font downloads — relies on
+     fonts that ship with macOS / Windows / iOS by default. */
+  --font-body: Palatino, 'Palatino Linotype', 'Palatino LT STD',
+    'Latin Modern Roman', Georgia, 'Hoefler Text',
+    'Source Han Serif SC', 'Noto Serif CJK SC', 'Noto Serif SC',
+    'Songti SC', SimSun, NSimSun, STSong, '宋体', serif;
+
+  /* Sans-serif kept for nav, buttons, list-row meta labels — anything
+     small/UI where serif would feel too heavy. */
+  --font-sans-zh: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  *,
+  *::before,
+  *::after {
+    font-family: var(--font-body);
+  }
+
+  /* UI surfaces use sans for clarity at small sizes. */
+  .ui-sans,
+  .ui-sans *,
+  nav,
+  nav *,
+  button,
+  .list-row__meta {
+    font-family: var(--font-sans-zh);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Match the reference site's chunky reading rhythm on desktop. */
+  @media (min-width: 600px) {
+    body {
+      font-size: 19px;
+      line-height: 1.8;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: background 150ms ease, border-color 150ms ease;
+  }
+}
+
+/* ---------- Centered reading column ---------- */
+.reading-column {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.reading-narrow {
+  max-width: 680px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+@media (min-width: 600px) {
+  .reading-column,
+  .reading-narrow {
+    padding-inline: 20px;
+  }
+}
+
+/* ---------- Page heading + divider (used on listing pages) ---------- */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--color-text);
+}
+
+@media (min-width: 600px) {
+  .page-title {
+    font-size: 34px;
+  }
+}
+
+.page-divider {
+  width: 150px;
+  height: 1px;
+  background: #E5E5E5;
+  border: none;
+  margin: 36px auto 32px;
+}
+
+@media (min-width: 600px) {
+  .page-divider {
+    margin: 40px auto 36px;
+  }
+}
+
+.page-intro {
+  color: var(--color-text-2);
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0 0 48px 0;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .page-intro {
+    font-size: 18px;
+    margin-bottom: 56px;
+  }
+}
+
+/* ---------- Long-form prose (Home / About / JournalDetail body) ---------- */
+.prose-zh {
+  color: var(--color-text);
+}
+
+/* "Margin only on bottom" pattern — establishes a single, predictable
+   vertical rhythm. Asymmetric top+bottom margins compound unpredictably
+   when paragraphs sit next to lists/headings; one-direction margins do not. */
+.prose-zh p {
+  margin: 0 0 28px 0;
+}
+
+.prose-zh p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hugo-style highlighter underline — the signature editorial link treatment. */
+.prose-zh a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid var(--color-highlight);
+  box-shadow: inset 0 -4px 0 var(--color-highlight);
+  background: transparent;
+  transition: background 150ms ease;
+}
+
+.prose-zh a:hover,
+.prose-zh a:focus {
+  background: var(--color-highlight);
+}
+
+.prose-zh ul {
+  list-style: none;
+  margin: 0 0 25px 0;
+  padding-left: 0;
+}
+
+.prose-zh li {
+  margin: 0 0 8px 0;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.prose-zh li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-3);
+}
+
+/* Opinionated "site corners" list — used on the homepage to introduce the
+   site sections (日志/产品/资源/关于). Drops the default · bullet and the
+   1.2em indent so each row reads as a clean `link —— description` pair. */
+.prose-zh .corners-list {
+  margin: 8px 0 25px 0;
+}
+.prose-zh .corners-list li {
+  padding-left: 0;
+  margin: 0 0 14px 0;
+}
+.prose-zh .corners-list li::before {
+  content: none;
+}
+
+/* "Questions in my head" list — used on the homepage for the 5 反问.
+   Editorial sidebar treatment: a single 1px hairline on the left ties the
+   five questions together as one continuous interior monologue. No bullets,
+   no decoration — restraint is the entire point. The slightly faded text
+   color (text-2) signals these are inner thoughts, not statements addressed
+   to the reader. */
+.prose-zh .questions {
+  margin: 18px 0 28px 0;
+  padding: 4px 0 4px 18px;
+  border-left: 1px solid var(--color-divider-strong);
+  list-style: none;
+}
+.prose-zh .questions li {
+  margin: 0 0 10px 0;
+  padding-left: 0;
+  color: var(--color-text-2);
+}
+.prose-zh .questions li:last-child {
+  margin-bottom: 0;
+}
+.prose-zh .questions li::before {
+  content: none;
+}
+
+/* Light-gray quote box — Hugo academic theme convention. */
+.prose-zh blockquote {
+  background: #F9F9F9;
+  border-left: 5px solid #CCCCCC;
+  padding: 6px 1em;
+  margin: 25px 0;
+}
+
+.prose-zh blockquote p {
+  margin: 8px 0;
+}
+
+.prose-zh blockquote > p:last-child {
+  text-align: right;
+  color: var(--color-text-2);
+}
+
+.prose-zh blockquote > p:first-child {
+  text-align: inherit;
+}
+
+.prose-zh hr {
+  width: 150px;
+  margin: 50px auto;
+  height: 1px;
+  border: none;
+  background: var(--color-divider-strong);
+}
+
+/* Black-bar strikethrough — hover reveals (matches reference site). */
+.prose-zh del {
+  background: #444;
+  color: #444;
+  text-decoration: none;
+  padding: 0 2px;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.prose-zh del:hover {
+  background: transparent;
+  color: inherit;
+}
+
+.prose-zh strong {
+  font-weight: 600;
+}
+
+.prose-zh h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 48px 0 16px;
+}
+
+@media (min-width: 600px) {
+  .prose-zh h2 {
+    font-size: 28px;
+  }
+}
+
+/* ---------- Hero image (Home) ---------- */
+/* Sharp edges, no SaaS-style bezel. Editorial photos commit to being
+   photographs — not UI cards. */
+.hero-image {
+  width: 75%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Epigraph treatment — small, wide-tracked, faded. Functions as a quiet
+   subtitle to the photo above, NOT as primary text. The wide letter-spacing
+   declares "this is a deliberate inscription" rather than "I forgot what
+   font-size to pick." */
+.hero-caption {
+  text-align: center;
+  color: var(--color-text-3);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  margin: 18px 0 0;
+  font-family: var(--font-sans-zh);
+}
+
+@media (min-width: 600px) {
+  .hero-caption {
+    font-size: 14px;
+    margin-top: 22px;
+  }
+}
+
+/* ---------- List rows (Journal / Resources / Products lists) ---------- */
+.list-row {
+  display: grid;
+  grid-template-columns: minmax(72px, max-content) 1fr;
+  gap: 1.25rem;
+  align-items: baseline;
+  padding: 10px 0;
+}
+
+.list-row + .list-row {
+  border-top: 1px solid var(--color-divider);
+}
+
+.list-row__meta {
+  color: var(--color-text-3);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Medium weight (500-600) gives serif CJK + Palatino titles the visual
+   crispness of "carved into paper" instead of the slightly anemic feel of
+   the default 400. System fonts (Songti SC, SimSun, Palatino) typically
+   only ship 400 / 700, so 600 reliably maps to the bold cut and renders
+   visibly heavier across macOS / Windows / iOS. */
+.list-row__title {
+  color: var(--color-text);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease;
+}
+
+@media (min-width: 600px) {
+  .list-row__title {
+    font-size: 19px;
+  }
+}
+
+a.list-row__title:hover {
+  border-bottom-color: var(--color-text);
+}
+
+/* ---------- Section milestone label ---------- */
+.section-label {
+  margin: 36px 0 14px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: var(--color-text-3);
+  font-family: var(--font-sans-zh);
+}
+
+.section-label:first-of-type {
+  margin-top: 0;
+}
+
+/* ---------- Loading skeleton ---------- */
+.skeleton-line {
+  height: 14px;
+  background: var(--color-divider);
+  border-radius: 2px;
+  margin: 10px 0;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Visually hidden but available to screen readers + SEO crawlers.
+   Used for the homepage h1 — hero photo carries the visible identity,
+   but Google / a11y need a real heading in the DOM. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
