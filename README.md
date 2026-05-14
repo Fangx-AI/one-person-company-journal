@@ -4,7 +4,9 @@
 
 [在线阅读](https://fxin.cc) / [全部日志](https://fxin.cc/journal) / [关于方鑫](https://fxin.cc/about)
 
-![方鑫一人公司纪实封面](public/images/og-cover.png)
+<p align="center">
+  <img src="public/images/og-cover.png" alt="方鑫一人公司纪实封面" width="720" />
+</p>
 
 这里记录的不是成功学，也不是包装后的项目复盘，而是一人公司从想法、执行、产品、内容、销售、焦虑到复盘的连续现场。
 
