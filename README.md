@@ -1,58 +1,104 @@
 # 方鑫一人公司纪实
 
-> 一个普通人用 AI 和互联网做一人公司的真实公开记录。
+一个普通人用 AI 和互联网做一人公司的真实记录。
 
-[在线阅读](https://fxin.cc) / [全部日志](https://fxin.cc/journal) / [关于方鑫](https://fxin.cc/about)
+这里记录想法、执行、产品、内容、销售、焦虑和复盘。它不是成功学，也不是项目包装，而是一个人在路上的公开笔记。
 
-<p align="center">
-  <img src="public/images/hero-photo-600.jpg" alt="方鑫一人公司纪实路上照片" width="560" />
-</p>
+网站：<https://fxin.cc>
 
-这里记录的不是成功学，也不是包装后的项目复盘，而是一人公司从想法、执行、产品、内容、销售、焦虑到复盘的连续现场。
+## 最新
 
-我希望把过程公开下来：今天做了什么，为什么这么做，哪里判断错了，哪里跑通了，下一步准备怎么调整。读者看到的不是一个已经完成的结果，而是一个人持续把事情往前推的真实过程。
-
-## 从这里开始读
-
-- [No.94 一人公司大总结：副业全公开、内容思考与反思](https://fxin.cc/journal/day-94)
+- [No.94 一人公司大总结](https://fxin.cc/journal/day-94)
+- [No.93 中转站合作邀请与自动化推广](https://fxin.cc/journal/day-93)
+- [No.92 五一假期工作汇报](https://fxin.cc/journal/day-92)
 - [No.90 极简主义、长期注意、我为什么不卖课](https://fxin.cc/journal/day-90)
-- [Day 87 网站 5 天破 2000 用户：找到痛点，然后打爆这个痛点](https://fxin.cc/journal/day-87)
-- [Day 84 强烈的使命感：关于离职、产品和一人公司的选择](https://fxin.cc/journal/day-84)
+- [No.89 合规性内容与个人网站改造](https://fxin.cc/journal/day-89)
+- [No.88 孙哥入场中转站，Karpathy 深度访谈](https://fxin.cc/journal/day-88)
+- [Day 87 网站 5 天破 2000 用户](https://fxin.cc/journal/day-87)
+- [Day 86 我的信息源、分销系统优化、GitHub 观察](https://fxin.cc/journal/day-86)
+- [Day 85 AI 对传统行业的冲击](https://fxin.cc/journal/day-85)
+- [Day 84 强烈的使命感](https://fxin.cc/journal/day-84)
+
+更多文章见 [日志列表](https://fxin.cc/journal)。
+
+## 目录
+
+### 2026
+
+- [No.94 一人公司大总结](https://fxin.cc/journal/day-94)
+- [No.93 中转站合作邀请与自动化推广](https://fxin.cc/journal/day-93)
+- [No.92 五一假期工作汇报](https://fxin.cc/journal/day-92)
+- [No.90 极简主义、长期注意、我为什么不卖课](https://fxin.cc/journal/day-90)
+- [No.89 合规性内容与个人网站改造](https://fxin.cc/journal/day-89)
+- [No.88 孙哥入场中转站，Karpathy 深度访谈](https://fxin.cc/journal/day-88)
+- [Day 87 网站 5 天破 2000 用户](https://fxin.cc/journal/day-87)
+- [Day 86 我的信息源、分销系统优化、GitHub 观察](https://fxin.cc/journal/day-86)
+- [Day 85 AI 对传统行业的冲击](https://fxin.cc/journal/day-85)
+- [Day 84 强烈的使命感](https://fxin.cc/journal/day-84)
 - [Day 83 个人 AI 生图网站正式上线](https://fxin.cc/journal/day-83)
+- [Day 82 专注于问题](https://fxin.cc/journal/day-82)
 - [Day 81 信息差与执行力](https://fxin.cc/journal/day-81)
+- [Day 75 忽略情绪，持续做事](https://fxin.cc/journal/day-75)
+- [Day 73 但行好事，莫问前程](https://fxin.cc/journal/day-73)
+- [Day 72 拍视频、写文章、个人网站上线](https://fxin.cc/journal/day-72)
 - [周报 No.10 竭尽所能去提升自己的价值感](https://fxin.cc/journal/week-10)
+- [周报 No.9 极端的厌恶带来极端的成长](https://fxin.cc/journal/week-9)
+- [周报 No.8 改用周报形式更新](https://fxin.cc/journal/week-8)
+- [Day 48 五条口播全平台上线](https://fxin.cc/journal/day-48)
+- [Day 47 五条口播全网发布](https://fxin.cc/journal/day-47)
+- [Day 46 个人网站迁移阿里云](https://fxin.cc/journal/day-46)
+- [Day 45 飞书 AI 蜂群协同优化，个人网站上线](https://fxin.cc/journal/day-45)
+- [Day 44 专注做事导致共情能力下降](https://fxin.cc/journal/day-44)
+- [Day 43 飞书搭建 AI 蜂群](https://fxin.cc/journal/day-43)
+- [Day 42 给用户带来价值感](https://fxin.cc/journal/day-42)
+- [Day 41 公众号内容做减法](https://fxin.cc/journal/day-41)
+- [Day 40 但行好事，莫问前程](https://fxin.cc/journal/day-40)
+- [Day 39 一篇吃透 OpenClaw Skills](https://fxin.cc/journal/day-39)
+- [Day 38 每天花三小时产出一篇深度文章](https://fxin.cc/journal/day-38)
+- [Day 37 战略调整，垂直 OpenClaw 方向](https://fxin.cc/journal/day-37)
+- [Day 36 小红书文章转图文，批量科普视频](https://fxin.cc/journal/day-36)
+- [Day 35 调研批量带货视频](https://fxin.cc/journal/day-35)
+- [Day 34 御己 App，AI 与正则识别的平衡](https://fxin.cc/journal/day-34)
+- [Day 33 拍了五条短视频](https://fxin.cc/journal/day-33)
+- [Day 32 技术工具选择，口播视频矩阵启动](https://fxin.cc/journal/day-32)
+- [Day 31 隐私合规 6 件事](https://fxin.cc/journal/day-31)
+- [Day 30 一人公司一个月小结](https://fxin.cc/journal/day-30)
+- [Day 29 孤独是创业者的常态](https://fxin.cc/journal/day-29)
+- [Day 27 Apple Developer 注册](https://fxin.cc/journal/day-27)
+- [Day 26 累的像条狗](https://fxin.cc/journal/day-26)
+- [Day 25 我的软件封禁记录](https://fxin.cc/journal/day-25)
+- [Day 23 过年停更一天](https://fxin.cc/journal/day-23)
+- [Day 22 深度研究 OpenClaw](https://fxin.cc/journal/day-22)
+- [Day 21 OpenClaw 教程迭代](https://fxin.cc/journal/day-21)
+- [Day 20 过年停更一天](https://fxin.cc/journal/day-20)
+- [Day 19 关于服务器的选择问题](https://fxin.cc/journal/day-19)
+- [Day 17 但行好事，莫问前程，保持良好心态](https://fxin.cc/journal/day-17)
+- [Day 16 关于方向的思考](https://fxin.cc/journal/day-16)
+- [Day 15 稳定工作](https://fxin.cc/journal/day-15)
+- [Day 14 Chrome 插件提交审核，网站开发完成](https://fxin.cc/journal/day-14)
+- [Day 13 深耕内容和工具收尾](https://fxin.cc/journal/day-13)
+- [Day 12 从 AI 碎片化内耗到内容生产结构化闭环](https://fxin.cc/journal/day-12)
+- [Day 11 解决 AI 对话繁琐问题](https://fxin.cc/journal/day-11)
+- [Day 10 产品合规是一切的前提](https://fxin.cc/journal/day-10)
+- [Day 9 国内独立开发者为什么这么难](https://fxin.cc/journal/day-9)
+- [Day 8 加强学习](https://fxin.cc/journal/day-8)
+- [Day 7 减负](https://fxin.cc/journal/day-7)
+- [Day 6 主业间隙用 AI 造工具](https://fxin.cc/journal/day-6)
+- [Day 5 DeskFlow 移动端开发攻坚](https://fxin.cc/journal/day-5)
+- [Day 3 DeskFlow 优化收尾](https://fxin.cc/journal/day-3)
+- [Day 2 DeskFlow v1.0.3 发布](https://fxin.cc/journal/day-2)
+- [Day 1 桌面代办清单 DeskFlow](https://fxin.cc/journal/day-1)
 
-最新内容以网站的 [日志列表](https://fxin.cc/journal) 为准。
+## 说明
 
-## 这里记录什么
+这个仓库包含个人博客网站源码，以及公开整理后的一人公司纪实数据。
 
-- 一人公司的日常推进：每天做了什么，卡在哪里，下一步是什么。
-- 产品和网站进展：从想法、开发、上线、优化到用户反馈。
-- 内容与流量实验：公众号、短视频、小报童、个人网站的取舍。
-- 商业判断：定价、销售、信息差、用户需求和真实收入变化。
-- 个人状态：焦虑、反思、节奏、取舍和长期主义。
+- 文章数据：`public/data/journal-entries.json`
+- 单篇数据：`public/data/journal/`
+- 网站源码：`src/`
+- 内容脚本：`scripts/`
 
-历史文章会保留当时的表达和项目状态。某些旧产品可能已经停止维护，但它们仍然是这段记录的一部分。
-
-## 当前状态
-
-- 已整理公开记录：63 篇
-- 最新公开编号：No.94
-- 网站地址：<https://fxin.cc>
-- 技术栈：React / Vite / TypeScript / Tailwind CSS
-- 内容数据：`public/data/journal-entries.json`
-
-## 仓库结构
-
-```text
-public/data/journal-entries.json   # 一人公司纪实主数据
-public/data/journal/               # 构建生成的单篇日志数据
-src/pages/Journal.tsx              # 日志列表页
-src/pages/JournalDetail.tsx        # 日志详情页
-src/pages/Home.tsx                 # 首页
-scripts/                           # 内容校验、索引生成、部署检查脚本
-docs/                              # 内容结构、发布检查、运维说明
-```
+历史文章保留当时的表达和项目状态。部分旧产品可能已经停止维护，但仍然是这段记录的一部分。
 
 ## 本地运行
 
@@ -61,76 +107,21 @@ npm install
 npm run dev
 ```
 
-常用命令：
-
-```bash
-npm run validate:content
-npm run lint
-npm run typecheck
-npm run build
-npm run check:release
-```
-
-## 内容更新
-
-抓取公众号文章：
-
-```bash
-npm run content:article -- <公众号文章URL> <day数字>
-```
-
-手动生成日志模板：
-
-```bash
-npm run content:tool -- journal-template --day 95
-```
-
-补充或修复 `slug`：
-
-```bash
-npm run content:add-slugs
-npm run content:add-slugs -- --write
-```
-
-每次更新内容后至少运行：
-
-```bash
-npm run validate:content
-```
-
-发布前运行：
+发布前检查：
 
 ```bash
 npm run check:release
 ```
 
-## 公开原则
+## 参与
 
-- 真实优先：保留过程中的犹豫、误判和调整。
-- 时间优先：文章按当时状态记录，不事后过度美化。
-- 价值优先：不把 GitHub 当网盘，不把 README 做成广告页。
-- 可修正：错别字、失效链接、事实错误可以通过 Issue 或 PR 反馈。
+欢迎提交错别字、失效链接、格式问题和网站 bug。
 
-## 参与方式
-
-欢迎提交：
-
-- 错别字、断句、格式问题
-- 失效链接、图片异常
-- 阅读路径建议
-- 网站代码 bug
-
-不接受：
-
-- 广告投稿
-- 资源站收录请求
-- 与一人公司纪实无关的内容扩展
+不接受广告投稿、资源站收录请求，以及与一人公司纪实无关的内容扩展。
 
 具体规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 授权
-
-代码和内容采用不同授权：
 
 - 网站源码：MIT License
 - 文章、图片、日志内容：CC BY-NC-ND 4.0
