@@ -89,6 +89,17 @@
 - [Day 2 DeskFlow v1.0.3 发布](https://fxin.cc/journal/day-2)
 - [Day 1 桌面代办清单 DeskFlow](https://fxin.cc/journal/day-1)
 
+## 关于作者
+
+方鑫，一个普通的一人公司实践者。正在用 AI 和互联网做产品、内容和销售，并持续公开记录过程中的判断、执行和复盘。
+
+- 网站：<https://fxin.cc>
+- 邮箱：<953995271@qq.com>
+- 微信：Morigest
+- 公众号 / 抖音：方鑫三个金
+- 小报童：[AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c)
+- 产品：[Image2.fun](https://image2.fun)
+
 ## 说明
 
 这个仓库包含个人博客网站源码，以及公开整理后的一人公司纪实数据。
