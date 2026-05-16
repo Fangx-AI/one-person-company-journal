@@ -74,13 +74,17 @@
 
 ## 关于作者
 
-方鑫，一个普通的一人公司实践者。正在用 AI 和互联网做产品、内容和销售，并持续公开记录过程中的判断、执行和复盘。
+**方鑫**，一人公司实践者，AI 产品与内容创业者。
+
+目前通过产品、内容和销售跑到月盈利 1-2 万元。这个仓库记录的不是成功学，而是从 0 到稳定现金流的真实过程。
 
 | 平台 | 链接 |
 | --- | --- |
-| 官网 | [fxin.cc](https://fxin.cc) |
-| 邮箱 | [953995271@qq.com](mailto:953995271@qq.com) |
-| 微信 | `Morigest` |
-| 公众号 / 抖音 | 方鑫三个金 |
-| 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
-| 产品 | [Image2.fun](https://image2.fun) |
+| 🌐 官网 | [fxin.cc](https://fxin.cc) |
+| 🧩 产品 | [Image2.fun](https://image2.fun) |
+| ✉️ 邮箱 | [953995271@qq.com](mailto:953995271@qq.com) |
+| 💬 微信 | `Morigest` |
+| 📣 公众号 / 抖音 | 方鑫三个金 |
+| 📚 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
+
+> 先做一个真实能跑起来的版本，再一点点把它变好。
