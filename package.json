@@ -14,12 +14,14 @@
     "content:tool": "node scripts/content-tool.mjs",
     "content:article": "node add_article.cjs",
     "content:add-slugs": "node scripts/add-journal-slugs.mjs",
+    "docs:github": "node scripts/generate-github-docs.mjs",
+    "test:github-docs": "node scripts/generate-github-docs.test.mjs",
     "sitemap:generate": "node scripts/generate-sitemap.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:postdeploy": "node scripts/post-deploy-check.mjs",
     "deploy": "npm run build && node scripts/deploy.mjs && npm run check:postdeploy",
     "prebuild": "npm run optimize:images && npm run build:journal-index && npm run sitemap:generate",
-    "check:release": "npm run validate:content && npm run optimize:images && npm run build:journal-index && npm run lint && npm run typecheck && npm run build",
+    "check:release": "npm run validate:content && npm run test:github-docs && npm run optimize:images && npm run build:journal-index && npm run lint && npm run typecheck && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
