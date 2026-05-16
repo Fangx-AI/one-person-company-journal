@@ -1,29 +1,8 @@
-# 方鑫一人公司纪实
+# 一人公司纪实
 
 一个普通人用 AI 和互联网做一人公司的真实记录。
 
-这里记录想法、执行、产品、内容、销售、焦虑和复盘。它不是成功学，也不是项目包装，而是一个人在路上的公开笔记。
-
-网站：<https://fxin.cc>
-
-## 最新
-
-- [No.94 一人公司大总结](https://fxin.cc/journal/day-94)
-- [No.93 中转站合作邀请与自动化推广](https://fxin.cc/journal/day-93)
-- [No.92 五一假期工作汇报](https://fxin.cc/journal/day-92)
-- [No.90 极简主义、长期注意、我为什么不卖课](https://fxin.cc/journal/day-90)
-- [No.89 合规性内容与个人网站改造](https://fxin.cc/journal/day-89)
-- [No.88 孙哥入场中转站，Karpathy 深度访谈](https://fxin.cc/journal/day-88)
-- [Day 87 网站 5 天破 2000 用户](https://fxin.cc/journal/day-87)
-- [Day 86 我的信息源、分销系统优化、GitHub 观察](https://fxin.cc/journal/day-86)
-- [Day 85 AI 对传统行业的冲击](https://fxin.cc/journal/day-85)
-- [Day 84 强烈的使命感](https://fxin.cc/journal/day-84)
-
-更多文章见 [日志列表](https://fxin.cc/journal)。
-
-## 目录
-
-### 2026
+## 2026
 
 - [No.94 一人公司大总结](https://fxin.cc/journal/day-94)
 - [No.93 中转站合作邀请与自动化推广](https://fxin.cc/journal/day-93)
@@ -93,48 +72,11 @@
 
 方鑫，一个普通的一人公司实践者。正在用 AI 和互联网做产品、内容和销售，并持续公开记录过程中的判断、执行和复盘。
 
-- 网站：<https://fxin.cc>
-- 邮箱：<953995271@qq.com>
-- 微信：Morigest
-- 公众号 / 抖音：方鑫三个金
-- 小报童：[AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c)
-- 产品：[Image2.fun](https://image2.fun)
-
-## 说明
-
-这个仓库包含个人博客网站源码，以及公开整理后的一人公司纪实数据。
-
-- 文章数据：`public/data/journal-entries.json`
-- 单篇数据：`public/data/journal/`
-- 网站源码：`src/`
-- 内容脚本：`scripts/`
-
-历史文章保留当时的表达和项目状态。部分旧产品可能已经停止维护，但仍然是这段记录的一部分。
-
-## 本地运行
-
-```bash
-npm install
-npm run dev
-```
-
-发布前检查：
-
-```bash
-npm run check:release
-```
-
-## 参与
-
-欢迎提交错别字、失效链接、格式问题和网站 bug。
-
-不接受广告投稿、资源站收录请求，以及与一人公司纪实无关的内容扩展。
-
-具体规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
-
-## 授权
-
-- 网站源码：MIT License
-- 文章、图片、日志内容：CC BY-NC-ND 4.0
-
-详见 [LICENSE](LICENSE)。
+| 平台 | 链接 |
+| --- | --- |
+| 官网 | [fxin.cc](https://fxin.cc) |
+| 邮箱 | [953995271@qq.com](mailto:953995271@qq.com) |
+| 微信 | `Morigest` |
+| 公众号 / 抖音 | 方鑫三个金 |
+| 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
+| 产品 | [Image2.fun](https://image2.fun) |
