@@ -8,6 +8,13 @@
 
 ## 2026
 
+- [No.103 微信读书 Skill，AI 中转站 100 问与系统学习](docs/2026/day-103.md)
+- [No.102 飞书 CLI，一人公司系统化与 AI 平权](docs/2026/day-102.md)
+- [No.101 Codex 手机端，HyperFrames 视频与 AI 剪辑](docs/2026/day-101.md)
+- [No.100 一人公司纪实继续更新，Claude 限额与 Codex 思考](docs/2026/day-100.md)
+- [No.99 黄仁勋演讲，AI 革命与一人公司的机会](docs/2026/day-99.md)
+- [No.98 Karpathy 四步法则，AI 编程与真实记录](docs/2026/day-98.md)
+- [No.96 OpenAI 三连炸，语音 AI 和一人公司的销售焦虑](docs/2026/day-96.md)
 - [No.94 一人公司大总结](docs/2026/day-94.md)
 - [No.93 中转站合作邀请与自动化推广](docs/2026/day-93.md)
 - [No.92 五一假期工作汇报](docs/2026/day-92.md)
