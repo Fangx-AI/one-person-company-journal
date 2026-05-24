@@ -1,7 +1,5 @@
 # 方鑫一人公司日报 No.88 | 孙哥入场中转站 | Karpathy 深度访谈 | AI 时代高学历优势
 
-> 原文：<https://fxin.cc/journal/day-88>
-
 > 孙哥也入局 B.AI 中转站,但孙哥项目你别碰。Karpathy 深度访谈:Software 3.0 是给 Context + Prompt 让 LLM 当智能解释器。AI 时代高学历会迎来大爆发——脱不下孔乙己长衫的时代结束了,你自己就是一支 Army。
 
 大家好，我是方鑫。今天是一人公司的第88天。

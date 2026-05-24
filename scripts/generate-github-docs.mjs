@@ -143,8 +143,6 @@ export function buildArticleMarkdown(entry) {
   return [
     `# ${displayTitle(entry)}`,
     '',
-    `> 原文：<https://fxin.cc/journal/${entry.slug}>`,
-    '',
     entry.summary ? `> ${entry.summary}` : '',
     entry.summary ? '' : null,
     content,

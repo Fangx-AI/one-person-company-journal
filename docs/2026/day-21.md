@@ -1,7 +1,5 @@
 # OpenClaw 教程迭代 | 从文字到视频
 
-> 原文：<https://fxin.cc/journal/day-21>
-
 > 今天几乎把所有时间都投入在了 OpenClaw 这件事上。
 
 今天几乎把所有时间都投入在了 OpenClaw 这件事上。

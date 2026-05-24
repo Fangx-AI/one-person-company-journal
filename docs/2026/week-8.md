@@ -1,7 +1,5 @@
 # 改用周报形式更新 | 上线创业教练网站 bookofelon.cn
 
-> 原文：<https://fxin.cc/journal/week-8>
-
 > 之前我一直按「天」更新一人公司创业日志。
 
 你好，我是方鑫。

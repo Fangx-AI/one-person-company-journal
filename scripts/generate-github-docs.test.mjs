@@ -23,7 +23,7 @@ assert.equal(localImagePath(sampleEntry, 0, sampleEntry.images[0]), '../assets/d
 
 const markdown = buildArticleMarkdown(sampleEntry)
 assert.match(markdown, /^# 桌面代办清单DeskFlow/)
-assert.match(markdown, /> 原文：<https:\/\/fxin\.cc\/journal\/day-1>/)
+assert.doesNotMatch(markdown, /https:\/\/fxin\.cc\/journal\/day-1/)
 assert.match(markdown, /!\[桌面代办清单DeskFlow 图 1\]\(\.\.\/assets\/day-1\/image-1\.png\)/)
 assert.doesNotMatch(markdown, /\[IMG:0\]/)
 
