@@ -8,6 +8,7 @@
 
 ## 2026
 
+- [No.107 多花Token](docs/2026/day-107.md)
 - [No.103 微信读书 Skill，AI 中转站 100 问与系统学习](docs/2026/day-103.md)
 - [No.102 飞书 CLI，一人公司系统化与 AI 平权](docs/2026/day-102.md)
 - [No.101 Codex 手机端，HyperFrames 视频与 AI 剪辑](docs/2026/day-101.md)
