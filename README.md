@@ -8,7 +8,12 @@
 
 ## 2026
 
+- [No.110 明确目标后的好心情](docs/2026/day-110.md)
+- [No.109 不确定感，专注](docs/2026/day-109.md)
+- [No.108 复利，高精力的秘密](docs/2026/day-108.md)
 - [No.107 多花Token](docs/2026/day-107.md)
+- [No.106 有些想法就应该死在脑子里](docs/2026/day-106.md)
+- [No.105 对一人公司新的感悟](docs/2026/day-105.md)
 - [No.103 微信读书 Skill，AI 中转站 100 问与系统学习](docs/2026/day-103.md)
 - [No.102 飞书 CLI，一人公司系统化与 AI 平权](docs/2026/day-102.md)
 - [No.101 Codex 手机端，HyperFrames 视频与 AI 剪辑](docs/2026/day-101.md)
@@ -32,9 +37,6 @@
 - [Day 75 忽略情绪，持续做事](docs/2026/day-75.md)
 - [Day 73 但行好事，莫问前程](docs/2026/day-73.md)
 - [Day 72 拍视频、写文章、个人网站上线](docs/2026/day-72.md)
-- [周报 No.10 竭尽所能去提升自己的价值感](docs/2026/week-10.md)
-- [周报 No.9 极端的厌恶带来极端的成长](docs/2026/week-9.md)
-- [周报 No.8 改用周报形式更新](docs/2026/week-8.md)
 - [Day 48 五条口播全平台上线](docs/2026/day-48.md)
 - [Day 47 五条口播全网发布](docs/2026/day-47.md)
 - [Day 46 个人网站迁移阿里云](docs/2026/day-46.md)
@@ -79,6 +81,9 @@
 - [Day 3 DeskFlow 优化收尾](docs/2026/day-3.md)
 - [Day 2 DeskFlow v1.0.3 发布](docs/2026/day-2.md)
 - [Day 1 桌面代办清单 DeskFlow](docs/2026/day-1.md)
+- [周报 No.10 竭尽所能去提升自己的价值感](docs/2026/week-10.md)
+- [周报 No.9 极端的厌恶带来极端的成长](docs/2026/week-9.md)
+- [周报 No.8 改用周报形式更新](docs/2026/week-8.md)
 
 ## 关于作者
 

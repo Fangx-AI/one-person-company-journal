@@ -28,7 +28,10 @@ assert.match(markdown, /!\[桌面代办清单DeskFlow 图 1\]\(\.\.\/assets\/day
 assert.doesNotMatch(markdown, /\[IMG:0\]/)
 
 const entries = readJournalEntries()
-const readme = buildReadme(entries.slice(0, 2))
+const day103 = entries.find((entry) => entry.slug === 'day-103')
+assert.ok(day103, 'day-103 fixture must exist in journal entries')
+
+const readme = buildReadme([day103])
 assert.match(readme, /^# 一人公司纪实/)
 assert.match(readme, /\[No\.103 微信读书 Skill，AI 中转站 100 问与系统学习\]\(docs\/2026\/day-103\.md\)/)
 assert.doesNotMatch(readme, /https:\/\/fxin\.cc\/journal\/day-103/)
