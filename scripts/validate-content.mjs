@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 const root = process.cwd()
 const journalPath = resolve(root, 'public/data/journal-entries.json')
 const resourcesPath = resolve(root, 'public/data/resources.json')
+const repostsPath = resolve(root, 'public/data/reposts.json')
 
 function assert(condition, message) {
   if (!condition) {
@@ -120,17 +121,51 @@ function validateResources(resources) {
   }
 }
 
+function validateReposts(reposts) {
+  assert(Array.isArray(reposts), 'reposts.json 必须是数组')
+
+  const ids = new Set()
+  for (const [index, repost] of reposts.entries()) {
+    const prefix = `reposts[${index}]`
+    assert(repost && typeof repost === 'object', `${prefix} 必须是对象`)
+    assert(typeof repost.id === 'string' && repost.id.trim().length > 0, `${prefix}.id 必填`)
+    assert(!ids.has(repost.id), `${prefix}.id 不能重复`)
+    ids.add(repost.id)
+    assert(/^[a-z0-9-]+$/i.test(repost.id), `${prefix}.id 只能包含字母、数字和连字符`)
+    assert(typeof repost.title === 'string' && repost.title.trim().length > 0, `${prefix}.title 必填`)
+    assert(typeof repost.url === 'string', `${prefix}.url 必须是字符串`)
+    validateUrlValue(repost.url, `${prefix}.url`)
+
+    if (repost.source !== undefined) assert(typeof repost.source === 'string', `${prefix}.source 必须是字符串`)
+    if (repost.author !== undefined) assert(typeof repost.author === 'string', `${prefix}.author 必须是字符串`)
+    if (repost.note !== undefined) assert(typeof repost.note === 'string', `${prefix}.note 必须是字符串`)
+    if (repost.publishedAt !== undefined) {
+      assert(typeof repost.publishedAt === 'string', `${prefix}.publishedAt 必须是字符串`)
+      assert(!Number.isNaN(new Date(repost.publishedAt).getTime()), `${prefix}.publishedAt 不是合法日期`)
+    }
+    if (repost.tags !== undefined) {
+      assert(Array.isArray(repost.tags), `${prefix}.tags 必须是数组`)
+      for (const [tagIndex, tag] of repost.tags.entries()) {
+        assert(typeof tag === 'string' && tag.trim().length > 0, `${prefix}.tags[${tagIndex}] 必须是非空字符串`)
+      }
+    }
+  }
+}
+
 async function main() {
-  const [journalEntries, resources] = await Promise.all([
+  const [journalEntries, resources, reposts] = await Promise.all([
     readJson(journalPath),
     readOptionalJson(resourcesPath),
+    readOptionalJson(repostsPath),
   ])
 
   validateJournal(journalEntries)
   if (resources) validateResources(resources)
+  if (reposts) validateReposts(reposts)
 
   const resourceText = resources ? `，${resources.length} 个历史资源` : ''
-  console.log(`内容校验通过：${journalEntries.length} 篇实录${resourceText}。`)
+  const repostText = reposts ? `，${reposts.length} 条转载` : ''
+  console.log(`内容校验通过：${journalEntries.length} 篇实录${resourceText}${repostText}。`)
 }
 
 main().catch((error) => {

@@ -35,7 +35,14 @@ export function SiteFooter() {
       </ul>
 
       <style>{`
-        .footer-links { display: inline-block; }
+        .footer-links {
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 0.35rem;
+          width: 100%;
+          box-sizing: border-box;
+        }
         .footer-item { display: inline-block; margin: 0; padding: 0; }
         .footer-item a {
           color: #888888;
@@ -50,6 +57,12 @@ export function SiteFooter() {
           position: relative;
           left: -2px;
           color: #CCCCCC;
+        }
+        @media (max-width: 520px) {
+          .footer-item a,
+          .footer-item span {
+            margin: 0 8px;
+          }
         }
       `}</style>
     </footer>

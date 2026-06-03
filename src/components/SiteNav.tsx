@@ -5,6 +5,7 @@ import { Menu, X } from '../icons'
 const NAV_ITEMS = [
   { label: '主页', to: '/' },
   { label: '日志', to: '/journal' },
+  { label: '转载', to: '/reposts' },
   { label: '产品', to: '/products' },
   { label: '联系', to: '/about' },
 ]

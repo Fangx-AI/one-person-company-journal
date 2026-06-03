@@ -122,6 +122,17 @@ function resolveEntries(entries) {
   })
 }
 
+function journalSortRank(entry) {
+  if (typeof entry.day === 'number') return entry.day
+  const week = String(entry.day ?? '').trim().match(/^w(\d+)$/i)
+  if (week) return Number(week[1]) * 7
+  return Number.NEGATIVE_INFINITY
+}
+
+function sortNewestFirst(entries) {
+  return [...entries].sort((a, b) => journalSortRank(b) - journalSortRank(a))
+}
+
 async function readSource() {
   const raw = await fs.readFile(SOURCE, 'utf8')
   let parsed
@@ -164,7 +175,7 @@ function summariseSize(bytes) {
 async function build() {
   const startedAt = Date.now()
   const source = await readSource()
-  const resolved = resolveEntries(source)
+  const resolved = sortNewestFirst(resolveEntries(source))
 
   const sourceBytes = Buffer.byteLength(JSON.stringify(source), 'utf8')
 

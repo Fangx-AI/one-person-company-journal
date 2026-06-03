@@ -7,6 +7,7 @@ const Journal = lazy(() => import('./pages/Journal').then((m) => ({ default: m.J
 const JournalDetail = lazy(() =>
   import('./pages/JournalDetail').then((m) => ({ default: m.JournalDetail })),
 )
+const Reposts = lazy(() => import('./pages/Reposts').then((m) => ({ default: m.Reposts })))
 const Products = lazy(() => import('./pages/Products').then((m) => ({ default: m.Products })))
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
 
@@ -44,6 +45,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/journal" element={<Journal />} />
             <Route path="/journal/:slug" element={<JournalDetail />} />
+            <Route path="/reposts" element={<Reposts />} />
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />

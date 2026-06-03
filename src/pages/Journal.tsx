@@ -6,29 +6,11 @@ import {
   getCachedJournalIndex,
 } from '../utils/journalLoader'
 import { getDisplayJournalTitle } from '../utils/journal'
-
-// Week milestones — preserved from the previous version. Each anchor day marks
-// the START of a week section in the chronological list (newest -> oldest).
-const milestones: { day: number | string; label: string }[] = [
-  { day: 94, label: '第十四周' },
-  { day: 87, label: '第十三周' },
-  { day: 84, label: '第十二周' },
-  { day: 75, label: '第十一周' },
-  { day: 'W10', label: '第十周' },
-  { day: 'W9', label: '第九周' },
-  { day: 'W8', label: '第八周' },
-  { day: 48, label: '第七周' },
-  { day: 42, label: '第六周' },
-  { day: 35, label: '第五周' },
-  { day: 28, label: '第四周' },
-  { day: 21, label: '第三周' },
-  { day: 14, label: '第二周' },
-  { day: 7, label: '第一周' },
-]
-
-function findMilestone(day: number | string) {
-  return milestones.find((m) => m.day === day) ?? null
-}
+import {
+  formatWeekLabel,
+  getJournalWeekNumber,
+  shouldShowWeekLabel,
+} from '../utils/journalWeeks'
 
 function formatDayBadge(day: number | string) {
   if (typeof day === 'number') return `Day ${day}`
@@ -115,11 +97,11 @@ export function Journal() {
       ) : (
         <div>
           {entries.map((entry, i) => {
-            const milestone = findMilestone(entry.day)
+            const weekNumber = getJournalWeekNumber(entry.day)
             return (
               <div key={`${entry.day}-${entry.slug}-${i}`}>
-                {milestone && (
-                  <div className="section-label">— {milestone.label} —</div>
+                {weekNumber !== null && shouldShowWeekLabel(entries, i) && (
+                  <div className="section-label">— {formatWeekLabel(weekNumber)} —</div>
                 )}
                 <div className="list-row">
                   <span className="list-row__meta">{formatDayBadge(entry.day)}</span>
