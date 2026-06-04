@@ -17,6 +17,13 @@ export function formatJournalDate(value?: string) {
   return trimmed.slice(0, 10)
 }
 
+export function formatJournalDateRange(values: Array<string | undefined>) {
+  const dates = Array.from(new Set(values.map(formatJournalDate).filter(Boolean))).sort()
+  if (dates.length === 0) return ''
+  if (dates.length === 1) return dates[0]
+  return `${dates[0]} 至 ${dates[dates.length - 1]}`
+}
+
 export function formatJournalDay(day: number | string) {
   if (typeof day === 'number') return `Day ${day}`
   const match = String(day).match(/^W(\d+)$/i)
