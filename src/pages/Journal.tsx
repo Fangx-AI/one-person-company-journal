@@ -6,19 +6,12 @@ import {
   getCachedJournalIndex,
 } from '../utils/journalLoader'
 import { getDisplayJournalTitle } from '../utils/journal'
+import { formatJournalDate, formatJournalDay, getJournalMetaLine } from '../utils/journalDates'
 import {
   formatWeekLabel,
   getJournalWeekNumber,
   shouldShowWeekLabel,
 } from '../utils/journalWeeks'
-
-function formatDayBadge(day: number | string) {
-  if (typeof day === 'number') return `Day ${day}`
-  // String like "W10" -> "第十周回顾"
-  const match = String(day).match(/^W(\d+)$/i)
-  if (match) return `Week ${match[1]}`
-  return String(day)
-}
 
 function ListSkeleton() {
   return (
@@ -103,8 +96,8 @@ export function Journal() {
                 {weekNumber !== null && shouldShowWeekLabel(entries, i) && (
                   <div className="section-label">— {formatWeekLabel(weekNumber)} —</div>
                 )}
-                <div className="list-row">
-                  <span className="list-row__meta">{formatDayBadge(entry.day)}</span>
+                <div className="list-row journal-list-row">
+                  <span className="list-row__meta journal-list-row__day">{formatJournalDay(entry.day)}</span>
                   <Link to={`/journal/${entry.slug}`} className="list-row__title">
                     {/*
                       Always derive the display title client-side from the raw
@@ -117,12 +110,75 @@ export function Journal() {
                     */}
                     {getDisplayJournalTitle(entry)}
                   </Link>
+                  <span className="journal-list-row__mobile-meta">{getJournalMetaLine(entry)}</span>
+                  {entry.publishedAt && (
+                    <time className="journal-list-row__date" dateTime={entry.publishedAt}>
+                      {formatJournalDate(entry.publishedAt)}
+                    </time>
+                  )}
                 </div>
               </div>
             )
           })}
         </div>
       )}
+
+      <style>{`
+        .journal-list-row {
+          grid-template-columns: minmax(72px, max-content) minmax(0, 1fr) max-content;
+        }
+        .journal-list-row__date {
+          color: var(--color-text-3);
+          font-family: var(--font-sans-zh);
+          font-size: 14px;
+          font-variant-numeric: tabular-nums;
+          letter-spacing: 0.02em;
+          white-space: nowrap;
+        }
+        .journal-list-row__mobile-meta {
+          display: none;
+        }
+        .journal-list-row .list-row__title {
+          min-width: 0;
+          overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 640px) {
+          .journal-list-row {
+            grid-template-columns: 1fr;
+            gap: 0.15rem;
+            align-items: start;
+            width: calc(100vw - 30px);
+            max-width: 100%;
+          }
+          .journal-list-row__day {
+            display: none;
+          }
+          .journal-list-row__date {
+            display: none;
+          }
+          .journal-list-row__mobile-meta {
+            display: block;
+            color: var(--color-text-3);
+            font-family: var(--font-sans-zh);
+            font-size: 13px;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.4;
+          }
+          .journal-list-row .list-row__title {
+            order: 1;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            white-space: normal !important;
+            overflow-wrap: anywhere !important;
+            word-break: break-all !important;
+          }
+          .journal-list-row__mobile-meta {
+            order: 2;
+          }
+        }
+      `}</style>
     </div>
   )
 }

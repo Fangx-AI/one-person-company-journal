@@ -190,6 +190,7 @@ async function build() {
     slug: entry.slug,
     tags: Array.isArray(entry.tags) ? entry.tags : [],
     cover: entry.cover ?? '',
+    ...(entry.publishedAt ? { publishedAt: entry.publishedAt } : {}),
   }))
 
   await fs.mkdir(ENTRY_OUT_DIR, { recursive: true })
@@ -216,6 +217,7 @@ async function build() {
       cover: entry.cover ?? '',
       images: Array.isArray(entry.images) ? entry.images : [],
       slug: entry.slug,
+      ...(entry.publishedAt ? { publishedAt: entry.publishedAt } : {}),
     }
     const serialized = JSON.stringify(payload)
     detailBytes += Buffer.byteLength(serialized, 'utf8')

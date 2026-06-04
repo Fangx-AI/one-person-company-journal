@@ -78,6 +78,11 @@ function validateJournal(entries) {
     assert(typeof entry.summary === 'string', `${prefix}.summary 必须是字符串`)
     assert(typeof entry.content === 'string', `${prefix}.content 必须是字符串`)
     assert(Array.isArray(entry.tags), `${prefix}.tags 必须是数组`)
+    if (entry.publishedAt !== undefined) {
+      assert(typeof entry.publishedAt === 'string', `${prefix}.publishedAt 必须是字符串`)
+      assert(/^\d{4}-\d{2}-\d{2}$/.test(entry.publishedAt), `${prefix}.publishedAt 必须是 YYYY-MM-DD`)
+      assert(!Number.isNaN(new Date(`${entry.publishedAt}T00:00:00+08:00`).getTime()), `${prefix}.publishedAt 不是合法日期`)
+    }
     if (entry.cover) {
       assert(typeof entry.cover === 'string', `${prefix}.cover 必须是字符串`)
       validateUrlValue(entry.cover, `${prefix}.cover`)

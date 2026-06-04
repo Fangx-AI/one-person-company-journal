@@ -7,6 +7,7 @@ export interface JournalEntry {
   cover?: string
   images?: string[]
   slug?: string
+  publishedAt?: string
 }
 
 export interface ResolvedJournalEntry extends JournalEntry {
@@ -33,4 +34,5 @@ export interface JournalIndexEntry {
   slug: string
   tags: string[]
   cover: string
+  publishedAt?: string
 }

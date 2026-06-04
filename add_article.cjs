@@ -54,6 +54,20 @@ function extractCover(html) {
   return '';
 }
 
+function timestampToChinaDate(timestampSeconds) {
+  const timestamp = Number(timestampSeconds);
+  if (!Number.isFinite(timestamp) || timestamp <= 0) return '';
+  return new Date((timestamp + 8 * 60 * 60) * 1000).toISOString().slice(0, 10);
+}
+
+function extractPublishedAt(html) {
+  const publishTime = html.match(/var\s+publish_time\s*=\s*"([^"]+)"/)?.[1];
+  if (publishTime && /^\d{4}-\d{2}-\d{2}/.test(publishTime)) return publishTime.slice(0, 10);
+
+  const timestamp = html.match(/var\s+ct\s*=\s*"?(\d{10})"?/)?.[1] || html.match(/ct\s*=\s*"?(\d{10})"?/)?.[1];
+  return timestamp ? timestampToChinaDate(timestamp) : '';
+}
+
 function extractShortTitle(title) {
   let t = title
     .replace(/^(一人公司|独舟一人公司|方鑫一人公司)(创业日志|创业周报)?\s*[·\u00B7\s]*[Dd]ay\s*\d+\s*[|\uff5c:：]?\s*/i, '')
@@ -107,6 +121,7 @@ async function main() {
   const fullTitle = extractTitle(html);
   const { text, images } = extractContentWithImages(html);
   const cover = extractCover(html);
+  const publishedAt = extractPublishedAt(html);
 
   if (!text) {
     console.error('Failed to extract content. WeChat may be blocking.');
@@ -133,12 +148,14 @@ async function main() {
   };
   if (cover) entry.cover = cover;
   if (images.length > 0) entry.images = images;
+  if (publishedAt) entry.publishedAt = publishedAt;
 
   console.log(`Title: ${fullTitle}`);
   console.log(`Short title: ${entry.title}`);
   console.log(`Day: ${entry.day}`);
   console.log(`Content: ${text.length} chars`);
   console.log(`Images: ${images.length}`);
+  if (publishedAt) console.log(`Published: ${publishedAt}`);
   console.log(`Tags: ${entry.tags.join(', ')}`);
 
   const jsonPath = 'public/data/journal-entries.json';

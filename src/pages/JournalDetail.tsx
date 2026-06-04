@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import type { JournalIndexEntry, ResolvedJournalEntry } from '../types/journal'
 import { findJournalIndexBySlug, getDisplayJournalTitle } from '../utils/journal'
+import { getJournalMetaLine } from '../utils/journalDates'
 import {
   fetchJournalEntryBySlug,
   fetchLatestJournalIndex,
@@ -37,13 +38,6 @@ function ensureCanonical() {
     document.head.appendChild(el)
   }
   return el
-}
-
-function formatDayBadge(day: number | string) {
-  if (typeof day === 'number') return `Day ${day}`
-  const match = String(day).match(/^W(\d+)$/i)
-  if (match) return `Week ${match[1]}`
-  return String(day)
 }
 
 function EntryBody({ entry }: { entry: ResolvedJournalEntry }) {
@@ -234,7 +228,7 @@ export function JournalDetail() {
               className="block text-xs mb-3"
               style={{ color: 'var(--color-text-3)', letterSpacing: '0.1em' }}
             >
-              {formatDayBadge(entry.day)}
+              {getJournalMetaLine(entry)}
             </span>
             <h1
               className="m-0 mb-4 sm:mb-5 font-semibold leading-tight"
