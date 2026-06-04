@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react'
 import { ExternalLink } from '../icons'
 import type { RepostEntry } from '../types/repost'
 
+declare const __BUILD_STAMP__: string
+
+const BUILD_STAMP = typeof __BUILD_STAMP__ !== 'undefined' ? __BUILD_STAMP__ : 'dev'
+
 function sortReposts(entries: RepostEntry[]) {
   return [...entries].sort((a, b) => {
     const aTime = a.publishedAt ? new Date(a.publishedAt).getTime() : 0
@@ -32,7 +36,9 @@ export function Reposts() {
 
     async function load() {
       try {
-        const response = await fetch('/data/reposts.json')
+        const response = await fetch(`/data/reposts.json?v=${BUILD_STAMP}`, {
+          cache: 'no-cache',
+        })
         if (!response.ok) throw new Error(`HTTP ${response.status}`)
         const data = (await response.json()) as RepostEntry[]
         setEntries(Array.isArray(data) ? sortReposts(data) : [])
