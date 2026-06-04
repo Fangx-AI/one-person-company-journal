@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "writes-and-write-nots",
+    "title": "写作者与不写作者",
+    "url": "https://read.limboy.me/writes-and-write-nots/zh",
+    "source": "Read 中文译文",
+    "author": "Paul Graham",
+    "note": "原文发表于 2024 年 10 月。写作即思考，这篇值得长期放在手边提醒自己。",
+    "tags": ["写作", "AI", "思考"]
+  }
+]
