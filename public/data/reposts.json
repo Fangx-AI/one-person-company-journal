@@ -1,5 +1,15 @@
 [
   {
+    "id": "why-write",
+    "title": "为什么要写作",
+    "url": "https://limboy.me/posts/why-write",
+    "source": "Limboy's Blog",
+    "author": "Limboy",
+    "publishedAt": "2026-05-08",
+    "note": "写作不是输出表演，而是思维健身。和《写作者与不写作者》放在一起看很合适。",
+    "tags": ["写作", "思考", "AI"]
+  },
+  {
     "id": "writes-and-write-nots",
     "title": "写作者与不写作者",
     "url": "https://read.limboy.me/writes-and-write-nots/zh",
