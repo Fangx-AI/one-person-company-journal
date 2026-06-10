@@ -41,6 +41,12 @@ function extractContentWithImages(html) {
 function extractTitle(html) {
   const m = html.match(/<h1[^>]*class="rich_media_title"[^>]*>([\s\S]*?)<\/h1>/);
   if (m) return m[1].replace(/<[^>]+>/g, '').trim();
+  const mActivity = html.match(/id="activity-name"[^>]*>([\s\S]*?)<\/h1>/);
+  if (mActivity) return mActivity[1].replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim();
+  const mMsgTitleSingle = html.match(/var\s+msg_title\s*=\s*'([^']*)'/);
+  if (mMsgTitleSingle) return mMsgTitleSingle[1].replace(/&nbsp;/g, ' ').trim();
+  const mOg = html.match(/og:title[^>]*content="([^"]*)"/);
+  if (mOg) return mOg[1].replace(/&nbsp;/g, ' ').trim();
   const m2 = html.match(/<title>(.*?)<\/title>/);
   if (m2) return m2[1].trim();
   return '';
@@ -70,11 +76,12 @@ function extractPublishedAt(html) {
 
 function extractShortTitle(title) {
   let t = title
+    .replace(/^(一人公司|独舟一人公司|方鑫一人公司)(创业日志|创业周报|日报|周报)?\s*(No\.?|Day)?\s*\d+\s*[|｜:：·\u00B7\s-]*/i, '')
     .replace(/^(一人公司|独舟一人公司|方鑫一人公司)(创业日志|创业周报)?\s*[·\u00B7\s]*[Dd]ay\s*\d+\s*[|\uff5c:：]?\s*/i, '')
     .replace(/^(开发日志)[Dd]ay\s*\d+\s*[——|\uff5c:：]+\s*/i, '')
     .trim();
   if (!t || t === title) {
-    t = title.replace(/^.*?[Dd]ay\s*\d+\s*[|\uff5c:：·\u00B7]\s*/i, '').trim();
+    t = title.replace(/^.*?(?:[Dd]ay|No\.?)\s*\d+\s*[|\uff5c｜:：·\u00B7]\s*/i, '').trim();
   }
   if (!t) t = title;
   return t;
@@ -112,8 +119,8 @@ async function main() {
   console.log(`Fetching: ${ARTICLE_URL}`);
   const resp = await fetch(ARTICLE_URL, {
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-      'Accept': 'text/html',
+      'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.49 NetType/WIFI Language/zh_CN',
+      'Accept': 'text/html,application/xhtml+xml',
     }
   });
   const html = await resp.text();
@@ -130,7 +137,7 @@ async function main() {
   }
 
   const dayNum = ARTICLE_DAY || (() => {
-    const m = fullTitle.match(/[Dd]ay\s*(\d+)/i);
+    const m = fullTitle.match(/(?:[Dd]ay|No\.?)\s*(\d+)/i);
     return m ? parseInt(m[1]) : null;
   })();
 
