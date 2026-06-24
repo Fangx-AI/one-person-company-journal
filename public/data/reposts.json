@@ -1,5 +1,15 @@
 [
   {
+    "id": "pinned-inside-dingtalk",
+    "title": "置身钉内",
+    "url": "https://read.limboy.me/pinned-inside-dingtalk",
+    "source": "Read 整理版",
+    "author": "滕雅辛（幽素）",
+    "publishedAt": "2026-06-04",
+    "note": "一篇 7.5 万字左右的钉钉 ONE 项目现场记录。重点不只是组织八卦，而是 AI 产品、管理逻辑和真实工作流之间的结构性冲突。",
+    "tags": ["AI", "产品", "组织"]
+  },
+  {
     "id": "why-write",
     "title": "为什么要写作",
     "url": "https://limboy.me/posts/why-write",
