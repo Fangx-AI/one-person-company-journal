@@ -8,6 +8,14 @@
 
 ## 2026
 
+- [No.140 筹备新项目（Skill）](docs/2026/day-140.md)
+- [No.139 工作环境](docs/2026/day-139.md)
+- [No.138 接了一个设计公司的单子](docs/2026/day-138.md)
+- [No.137 WorkBuddy多专家模式夯爆了](docs/2026/day-137.md)
+- [No.136 科普Codex的环境配置](docs/2026/day-136.md)
+- [No.135 AI 时代到底应该学什么？](docs/2026/day-135.md)
+- [No.134 浅谈SpaceX](docs/2026/day-134.md)
+- [No.133 开源 or 闭源？这是个问题](docs/2026/day-133.md)
 - [No.132 从大众心理层面剖析VibeCoding爆火原因](docs/2026/day-132.md)
 - [No.131 做产品先要认识自己](docs/2026/day-131.md)
 - [No.130 美国 AI 分析师看完中国大厂之后，真正改观的是什么](docs/2026/day-130.md)
