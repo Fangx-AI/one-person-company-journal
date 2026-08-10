@@ -8,6 +8,16 @@
 
 ## 2026
 
+- [No.151 如何大幅度降低Token消耗量](docs/2026/day-151.md)
+- [No.150 如何超过90%的创作者](docs/2026/day-150.md)
+- [No.149 保持好状态](docs/2026/day-149.md)
+- [No.148 对标爆款视频](docs/2026/day-148.md)
+- [No.147 小红书爆款规律，ios实机测试](docs/2026/day-147.md)
+- [No.146 ios产品开发，AI剪辑课程](docs/2026/day-146.md)
+- [No.145 持续开源Cut-Director](docs/2026/day-145.md)
+- [No.143 Codex + ChatCut剪辑心得](docs/2026/day-143.md)
+- [No.142 我为什么看好ai剪辑](docs/2026/day-142.md)
+- [No.141 三个想法](docs/2026/day-141.md)
 - [No.140 筹备新项目（Skill）](docs/2026/day-140.md)
 - [No.139 工作环境](docs/2026/day-139.md)
 - [No.138 接了一个设计公司的单子](docs/2026/day-138.md)
