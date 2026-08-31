@@ -5,6 +5,7 @@ const root = process.cwd()
 const journalPath = resolve(root, 'public/data/journal-entries.json')
 const resourcesPath = resolve(root, 'public/data/resources.json')
 const repostsPath = resolve(root, 'public/data/reposts.json')
+const skillsPath = resolve(root, 'public/data/skills.json')
 
 function assert(condition, message) {
   if (!condition) {
@@ -157,20 +158,49 @@ function validateReposts(reposts) {
   }
 }
 
+function validateSkills(skills) {
+  assert(Array.isArray(skills), 'skills.json 必须是数组')
+  assert(skills.length > 0, 'skills.json 不能为空')
+
+  const ids = new Set()
+  const statuses = new Set(['public', 'personal', 'experiment'])
+  for (const [index, skill] of skills.entries()) {
+    const prefix = `skills[${index}]`
+    assert(skill && typeof skill === 'object', `${prefix} 必须是对象`)
+    assert(typeof skill.id === 'string' && /^[a-z0-9-]+$/i.test(skill.id), `${prefix}.id 格式不正确`)
+    assert(!ids.has(skill.id), `${prefix}.id 不能重复`)
+    ids.add(skill.id)
+    assert(typeof skill.name === 'string' && skill.name.trim().length > 0, `${prefix}.name 必填`)
+    assert(typeof skill.description === 'string' && skill.description.trim().length > 0, `${prefix}.description 必填`)
+    assert(typeof skill.category === 'string' && skill.category.trim().length > 0, `${prefix}.category 必填`)
+    assert(statuses.has(skill.status), `${prefix}.status 必须是 public、personal 或 experiment`)
+    if (skill.url !== undefined) {
+      assert(typeof skill.url === 'string', `${prefix}.url 必须是字符串`)
+      validateUrlValue(skill.url, `${prefix}.url`)
+    }
+    if (skill.status === 'public') {
+      assert(typeof skill.url === 'string' && skill.url.length > 0, `${prefix} 公开 Skill 必须提供 url`)
+    }
+  }
+}
+
 async function main() {
-  const [journalEntries, resources, reposts] = await Promise.all([
+  const [journalEntries, resources, reposts, skills] = await Promise.all([
     readJson(journalPath),
     readOptionalJson(resourcesPath),
     readOptionalJson(repostsPath),
+    readOptionalJson(skillsPath),
   ])
 
   validateJournal(journalEntries)
   if (resources) validateResources(resources)
   if (reposts) validateReposts(reposts)
+  if (skills) validateSkills(skills)
 
   const resourceText = resources ? `，${resources.length} 个历史资源` : ''
   const repostText = reposts ? `，${reposts.length} 条转载` : ''
-  console.log(`内容校验通过：${journalEntries.length} 篇实录${resourceText}${repostText}。`)
+  const skillText = skills ? `，${skills.length} 个 Skill` : ''
+  console.log(`内容校验通过：${journalEntries.length} 篇实录${resourceText}${repostText}${skillText}。`)
 }
 
 main().catch((error) => {

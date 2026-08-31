@@ -41,7 +41,7 @@ async function main() {
   const staticUrls = [
     buildUrl('/', '1.0', 'daily'),
     buildUrl('/journal', '0.9', 'daily'),
-    buildUrl('/reposts', '0.7', 'weekly'),
+    buildUrl('/skills', '0.8', 'weekly'),
     buildUrl('/products', '0.8', 'monthly'),
     buildUrl('/about', '0.6', 'monthly'),
   ]

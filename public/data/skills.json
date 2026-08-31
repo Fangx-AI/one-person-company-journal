@@ -1,0 +1,70 @@
+[
+  {
+    "id": "cut-director",
+    "name": "Cut Director",
+    "description": "为口播、访谈和知识类视频规划视觉节奏、动效、配图与镜头组织。",
+    "category": "视频创作",
+    "status": "public",
+    "url": "https://github.com/Fangx-AI/cut-director"
+  },
+  {
+    "id": "podcast-reader",
+    "name": "Podcast Reader",
+    "description": "把播客和长视频整理成带时间戳、可检索、可追问的研究资料包。",
+    "category": "研究与阅读",
+    "status": "public",
+    "url": "https://github.com/Fangx-AI/podcast-reader"
+  },
+  {
+    "id": "ni-haixia-perspective",
+    "name": "倪海厦视角",
+    "description": "基于公开材料提炼可溯源的思维框架，并为医疗话题保留明确的安全边界。",
+    "category": "人物视角",
+    "status": "public",
+    "url": "https://github.com/Fangx-AI/ni-haixia-perspective"
+  },
+  {
+    "id": "fxskill",
+    "name": "fxskill",
+    "description": "面向建站新手的网站顾问，覆盖路线、设计、服务器、合规、SEO 与维护。",
+    "category": "网站与产品",
+    "status": "public",
+    "url": "https://github.com/Fangx-AI/fxskill"
+  },
+  {
+    "id": "ghibli-skill",
+    "name": "Ghibli Skill",
+    "description": "根据文章内容生成连贯的插图方案，包含预览、连续性控制与质量检查。",
+    "category": "视觉创作",
+    "status": "public",
+    "url": "https://github.com/Fangx-AI/ghibli-skill"
+  },
+  {
+    "id": "huashu-nuwa",
+    "name": "女娲 · Skill 造人术",
+    "description": "从人物或主题出发，深度研究并蒸馏为可运行、可复用的人物思维 Skill。",
+    "category": "Skill 工程",
+    "status": "experiment"
+  },
+  {
+    "id": "eli5",
+    "name": "ELI5",
+    "description": "根据指定受众重写复杂概念，让解释真正匹配对方的知识背景。",
+    "category": "表达与学习",
+    "status": "personal"
+  },
+  {
+    "id": "ian-xiaohei-illustrations",
+    "name": "Ian 小黑正文配图",
+    "description": "把中文文章中的判断、流程和隐喻转成清爽、怪诞的手绘正文配图。",
+    "category": "视觉创作",
+    "status": "personal"
+  },
+  {
+    "id": "ian-xiaohei-scenes",
+    "name": "Ian 小黑实物场景",
+    "description": "用小黑、真实物件和物理动作表达职场处境、产品演化与个人经历。",
+    "category": "视觉创作",
+    "status": "personal"
+  }
+]
