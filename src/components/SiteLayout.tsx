@@ -13,16 +13,16 @@ declare global {
 }
 
 /**
- * Run pangu on the document body to auto-insert a thin space between CJK and
- * Latin/digits. Called after every route transition, with a small delay so
- * React has finished committing the new DOM.
+ * Run pangu on article content without touching navigation and other UI text.
+ * Called after every route transition, with a small delay so React has
+ * finished committing the new DOM.
  */
 function runPanguSoon() {
   if (typeof window === 'undefined') return
   // Two passes: one quickly (most cases), one a beat later (lazy chunks).
   const apply = () => {
     try {
-      window.pangu?.spacingPage()
+      window.pangu?.spacingElementById?.('site-main')
     } catch {
       // pangu not loaded yet; the post-load 600ms timeout below catches it.
     }
@@ -43,7 +43,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: 'var(--color-bg)' }}>
       <SiteNav />
-      <main className="flex-1">{children}</main>
+      <main id="site-main" className="flex-1">{children}</main>
       <SiteFooter />
     </div>
   )
