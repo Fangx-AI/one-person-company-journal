@@ -14,6 +14,7 @@
 - [No.157 搭建自己的自媒体工作台](docs/2026/day-157.md)
 - [No.156 Deepseek Harness 使用体感](docs/2026/day-156.md)
 - [No.155 无视中断](docs/2026/day-155.md)
+- [No.154 如何对标创作爆款文章](docs/2026/day-154.md)
 - [No.153 如何获取高质量AI信息](docs/2026/day-153.md)
 - [No.152 自媒体多平台分发很重要](docs/2026/day-152.md)
 - [No.151 如何大幅度降低Token消耗量](docs/2026/day-151.md)
