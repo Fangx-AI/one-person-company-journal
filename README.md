@@ -8,6 +8,14 @@
 
 ## 2026
 
+- [No.160 解释得像我是五岁小孩](docs/2026/day-160.md)
+- [No.159 持续不断的学习和进步](docs/2026/day-159.md)
+- [No.158 ELI5，AI隐形水印](docs/2026/day-158.md)
+- [No.157 搭建自己的自媒体工作台](docs/2026/day-157.md)
+- [No.156 Deepseek Harness 使用体感](docs/2026/day-156.md)
+- [No.155 无视中断](docs/2026/day-155.md)
+- [No.153 如何获取高质量AI信息](docs/2026/day-153.md)
+- [No.152 自媒体多平台分发很重要](docs/2026/day-152.md)
 - [No.151 如何大幅度降低Token消耗量](docs/2026/day-151.md)
 - [No.150 如何超过90%的创作者](docs/2026/day-150.md)
 - [No.149 保持好状态](docs/2026/day-149.md)
