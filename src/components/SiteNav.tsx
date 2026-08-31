@@ -46,7 +46,7 @@ export function SiteNav() {
         </span>
         <span className="hidden md:block" />
 
-        <nav className="hidden md:flex items-center justify-end gap-7" style={{ fontSize: '18px' }}>
+        <nav className="hidden md:flex items-center justify-end gap-5" style={{ fontSize: '18px' }}>
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.to}
