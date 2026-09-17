@@ -8,6 +8,17 @@
 
 ## 2026
 
+- [No.171 Hypit 一键复制任何博主的视频](docs/2026/day-171.md)
+- [No.170 推荐十个Workbuddy顶级Skill](docs/2026/day-170.md)
+- [No.169 简洁明了](docs/2026/day-169.md)
+- [No.168 近期事项](docs/2026/day-168.md)
+- [No.167 GPT Image2.5的十个新玩法](docs/2026/day-167.md)
+- [No.166 数学与AI](docs/2026/day-166.md)
+- [No.165 习惯的变化](docs/2026/day-165.md)
+- [No.164 WorkBuddy 开放平台上线](docs/2026/day-164.md)
+- [No.163 MiniMax H3可能是新一轮AI视频革命](docs/2026/day-163.md)
+- [No.162 Tab 还是空格](docs/2026/day-162.md)
+- [No.161 小白必看的AI热门49词](docs/2026/day-161.md)
 - [No.160 解释得像我是五岁小孩](docs/2026/day-160.md)
 - [No.159 持续不断的学习和进步](docs/2026/day-159.md)
 - [No.158 ELI5，AI隐形水印](docs/2026/day-158.md)
