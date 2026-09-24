@@ -16,14 +16,6 @@
     "url": "https://github.com/Fangx-AI/podcast-reader"
   },
   {
-    "id": "ni-haixia-perspective",
-    "name": "倪海厦视角",
-    "description": "基于公开材料提炼可溯源的思维框架，并为医疗话题保留明确的安全边界。",
-    "category": "人物视角",
-    "status": "public",
-    "url": "https://github.com/Fangx-AI/ni-haixia-perspective"
-  },
-  {
     "id": "fxskill",
     "name": "fxskill",
     "description": "面向建站新手的网站顾问，覆盖路线、设计、服务器、合规、SEO 与维护。",
@@ -38,13 +30,6 @@
     "category": "视觉创作",
     "status": "public",
     "url": "https://github.com/Fangx-AI/ghibli-skill"
-  },
-  {
-    "id": "huashu-nuwa",
-    "name": "女娲 · Skill 造人术",
-    "description": "从人物或主题出发，深度研究并蒸馏为可运行、可复用的人物思维 Skill。",
-    "category": "Skill 工程",
-    "status": "experiment"
   },
   {
     "id": "eli5",
