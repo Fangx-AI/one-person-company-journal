@@ -8,6 +8,11 @@
 
 ## 2026
 
+- [No.176 早记录](docs/2026/day-176.md)
+- [No.175 我负责任的讲，VibeCoding想赚到钱的本质就是一个字 抄](docs/2026/day-175.md)
+- [No.174 如何用Jev在浏览器上做选择题](docs/2026/day-174.md)
+- [No.173 一次性讲透 Jev](docs/2026/day-173.md)
+- [No.172 文章一键转xhs纪实卡片](docs/2026/day-172.md)
 - [No.171 Hypit 一键复制任何博主的视频](docs/2026/day-171.md)
 - [No.170 推荐十个Workbuddy顶级Skill](docs/2026/day-170.md)
 - [No.169 简洁明了](docs/2026/day-169.md)
