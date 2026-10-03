@@ -1,5 +1,88 @@
 [
   {
+    "day": 181,
+    "title": "一点点优化",
+    "summary": "这两天发的视频发的还蛮多的，大概有十条左右吧。有的是AI做的，有的是我的口播。",
+    "content": "这两天发的视频发的还蛮多的，大概有十条左右吧。\n\n有的是AI做的，有的是我的口播。\n\n目前遇到一个问题就是我的口播导出太慢了，今天我用手机直接录制了五个视频，光是导出都花了我半个小时，然后导入到电脑里又是十几分钟，给五个视频做封面又去了十几分钟，最后一个个发布也是十几分钟。\n\n一套流程整下来，我拍摄花了半个小时左右，最后导出+发布+封面+简介+标签花了我一个半小时。\n\n我觉得这个流程是可以大幅度优化并且进行微调的，我想尝试做一套简易的Agent流程。\n\n1、视频导入导出的问题看能不能引入设备或者查询有没有更快捷的方法\n\n2、视频封面、简介、爆款标题的制作，应该在我把文件拖进去的那一刻就应该自动生成各个平台的内容了。\n\n明天我会试试。\n\n试试就知道了。",
+    "tags": [
+      "视频",
+      "效率",
+      "自动化"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCqpeibHccoU7wjLtpfm5SXubrjRYWqy2zFnPGKSp0AbFz0HWITJ84zbX2vpMD5AALc04kiacq9PswY5dGzPj8XQ2z5clqzqS1TLI/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-10-02",
+    "slug": "day-181"
+  },
+  {
+    "day": 180,
+    "title": "Opus5.5做视频的实力超我想象",
+    "summary": "作为一个喜欢研究AI做视频的博主，我可以毫无疑问的确定，Opus5.5做视频的实力一定是世界第一。",
+    "content": "作为一个喜欢研究AI做视频的博主，我可以毫无疑问的确定，Opus5.5做视频的实力一定是世界第一，目前不存在任何的对手。\n\n我试过Codex、Grok、Gemni、Hyperframe、chatcut等等一系列做视频的Agent，没有一个是可以直接出成片的，都需要去不断的去调试，修改提示词，而且往往效果也是事与愿违。\n\n给大家看看一次生成的效果\n\n我准备做一系列关于AI概念科普的视频，制作风格每个都不一样，唯一相同的是，我都会用Opus5.5做。",
+    "tags": [
+      "AI",
+      "视频"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZColdS6L1BwDL41YHic5O6djeoCTmM4196xHd8YoJ6Jh6acmiaZAiaQn1cYNKV13BO6HdmnQMqgeJPxToZq3cv77sibmXqichic5qricIw/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-09-30",
+    "slug": "day-180"
+  },
+  {
+    "day": 179,
+    "title": "重新尝试Opus5.5",
+    "summary": "最近Opus5.5真的让我有点心动了，之前也给大家讲过，我真的是花费了大力气搭建了一个很完美的干净环境，结果还是被封了。",
+    "content": "最近Opus5.5真的让我有点心动了，之前也给大家讲过，我真的是花费了大力气搭建了一个很完美的干净环境，结果还是被封了。\n\n[IMG:0]\n\n今天我还是没忍住又弄了个Claude Pro会员，花了更多的时间去整理环境，暂时还没封号，先试试。\n\n如果过了一段时间还是没封，我就把方法分享给大家\n\n最近的精力基本上全部投入到视频的制作中，大家应该也能看到我最近拍了很多口播文案，我也不知道我运气算不算好，就是我拍口播其实流量还可以，都能保持两三个就有一个10W加。\n\n可能是因为选题的原因。\n\nAnyway，天天拍是必须的，我今天11.20才到家，也花了十分钟记录了一下，目的是完成自己的每日一拍，每日一课。",
+    "tags": [
+      "AI",
+      "视频"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCpL2IMPqy7NGHCB25yXF8VfhZeXQqTQXDFu6367GicWicXJic7bGp8t7P2YnxYIo62WVofMb03aOicUddGwxbiczP86EeRFrNXzu0tc/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqyVg4TPhgKVJcpdeacoQVGIvD97Q3iactv4WMaLZpx7yJbZerU2aftaMtH5S3u4xRkyQGsKStrSiaQghUDGE40vcUSLpnrF7K54/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-09-28",
+    "slug": "day-179"
+  },
+  {
+    "day": 178,
+    "title": "十项工作的推进",
+    "summary": "前两天列了一堆待办，今天一个个过一下。做完的记一下，没做完的继续。",
+    "content": "前两天列了一堆待办，今天一个个过一下。做完的记一下，没做完的继续。\n\n1、系统性学了下姚老师的GEO Flow，对GEO大概有个了解了。\n\n接下来准备开个合集，边学边写：\n\n企业官网知识库怎么搭、怎么模拟不同用户提问、问题和内容怎么组织更容易让AI识别。顺便拍成视频。\n\n2、GEO网站「冒泡」已上线，主要流程基本跑通了。\n\n[IMG:0]\n\n内部GEO群里有四五个群友帮忙测试，反馈还可以，还在继续优化。这个项目我给自己定的时间最多就是3—5天。\n\n3、Codex聊天框整理好了。分享一个自用提示词，直接复制就能用：\n\n“Audit and organize all Codex chats/tasks associated with this project folder. Execute the cleanup, not just recommendations.\n\n只处理当前项目，不要删对话，不要动文件。\n\n标题乱的就改成能搜到的短标题。\n\n已经做完、没有未完成事项的才归档。\n\n拿不准的先改名，不要归档。\n\n正在跑的任务不要动。\n\n最后给我一张表：原标题 | 新标题 | 归档还是保留 | 原因。\n\n4、Obsidian也整理好了。\n\n我的内容、创业项目、学习资料、附件、归档都分开了，干干净净，看着非常舒服。\n\n[IMG:1]\n\n5、最新的公众号文章已经同步到个人主页，按时间排列，回头找自己的内容也方便。\n\n[IMG:2]\n\n6、小红书图文还没完成，继续推进中。\n\n准备对标KishenArt这个博主的电影质感内容，还在让Codex研究他的做法，希望今天能做出来。\n\n[IMG:3]\n\n7、这几天视频倒是一直在拍，粗略算了下，全网大概有20万播放。多平台发视频挺有意思，同样的内容，不同平台的播放量差距太大了。\n\n以后还是尽量日更。有时间就拍口播、露脸，没时间就让Codex研究参考案例，帮我做视频。\n\n[IMG:4]\n\n[IMG:5]\n\n8、各平台的视频合集和分类已经整理好了。\n\n我让Codex直接操作浏览器，逐条读取我的视频，再建合集、做分类。\n\n[IMG:6]\n\n[IMG:7]\n\n9、播客分享系列，这个感觉得拖欠了，自己尝试了一下，很难完全脱稿，或者说敞开心扉的剖析自己然后讲20分钟播客，暂时播客计划可能要搁浅了。\n\n10、小报童已更新一篇。",
+    "tags": [
+      "AI",
+      "项目",
+      "复盘"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCrcIvOh9nlXRzuAfyTwagjVY1g6aBupndvsYWuibxzGAKecr8JvXuDXjdBpZUm7IO9qVgfNMWLibgxQ4kDg9FLYhPKATsubayjjA/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCrU0z9fbJasDIcIr4tDaAx7O73B6cFcBaNmqelIawCIHkLwNOZPSj16jgJ6GAftes6aW6dgRHfic7pvApAqlhcSViaicbSFdVaKHw/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpTV0lZzcibEn4AQmicQ1Hz8NR6GW5cQzapx90VlRKJgicXj8jRTNuA3oHXRlgEyibZuLAXglnwo6fIvbH3nX8oXx9n4yicDKHOGIss/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqBC1r6oOtMst3xvM83vjK0vyerdJaj2YaNuxXKrsZgHLMg7zpNia4guOM6S2powrF49xHZI5Wdmn0MkrOt8KFE8EaQ75K29JAw/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCpvWmFWNfY793GYAo5UrxEntqXweRI8VOLVnKBa69NST6vMrmR9rDVwEwWWulJwRUTQcH0rgibS6h1ShycmibOfUGa4cBkgiasheA/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpJrUAViaryLbTibaYL2y9swypkTIKT8qUvSOAG99WZXPzyrwSKJwDzyuX7updZeOP0fp1uibgzjSQyVFN34m6dES4k2ic1NSYx4xM/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoEFdqPibdDrsV5FvPFJ9yJVPl3e6yaxAbKOiaYuCBhV8bfDteiaflLNURgleHjbgbB3t2wyIibvvErkc0ALFHPyDdWKWjrUTFcPO8/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZColzVm7BuVldGVH0ruJWR9dYe9M3Dhe5bYlYPDXIjQn2TDicZMOby8wkgV3wIYlwjpUkibgPdjQVdw0srwCvUibPUBBrXiahYqnwvk/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqaTvW8mIRGeTAul8KFIicD4B2kggL5RbrfIic0hBar3rJZORNTWlJbQYkFphF9THSqkJcdbEqxOfVibywlWA8Pj0biaamNDGssDhM/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-09-27",
+    "slug": "day-178"
+  },
+  {
+    "day": 177,
+    "title": "祝大家节日快乐",
+    "summary": "祝大家中秋快乐~大家中秋有和家人在一起吗，过的还开心吗。",
+    "content": "祝大家中秋快乐~\n\n大家中秋有和家人在一起吗，过的还开心吗。\n\n我很在意这种节日，不管是我在忙的时候，我觉得都需要抽出时间去陪伴家人或者说在乎的人，而且可能也是因为AI带来的时代焦虑太大了，所以每天高强度运用AI的我，可能比以往任何时间都需要这种节日去逃避AI，逃避快速发展的时代。\n\n我想起我前两天看的一本书，叫时间游戏，里面谈到了AI是否会取代我们工作这个问题，里面的观点很有意思，它并没有给出答案是否AI会取代我们的生活，相反，他认为这个问题的关键点在于你对于时间的看法上。\n\n如果你认为自己很大，很能干，适应性很强，那么你就活在远期的时间里，你对未来的看法就会处于一种积极的状态，你认为未来是机遇大于风险的，即使你现在的工作有可能被AI取代，你仍然会乐于去寻找新的工作，相信自己可以找到新的工作，学习新的技能，从而变成一个更强大的人，尝试新的生活。\n\n那么相反，如果你生活在近期的时间里，你会认为自己很无辜，很可怜，很委屈，不希望生活被AI改变。本质上是你觉得你自己所剩的时间不多了，你没有过的时间去改变自己或者说改变生活了，可能是来源于生活的压力，可能是来源于家庭的压力，各式各样的，让你觉得你无法有充足的时间去跟上这个时代，你被欺负且不公平的对待了，你对未来的看法会更多着眼于当前社会的不公平和下个月可能要支付的账单。\n\n种下一棵树，最好的时间是十年前，第二好的时间是现在。\n\n这句话我觉得也适用于AI领域，AI可能不需要你十年前去学习，当下可能就是最好的学习时机。",
+    "tags": [
+      "日志",
+      "思考"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCrqOpiaBChlrX386YtKJic4zia2nPfmqfkrZVwsYl9VfK4YEswkOLlDm7b3v50yFqaOqYJMsOCmLfJicRL8ia3ceecvz7ibbr1WzI4fM/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-09-26",
+    "slug": "day-177"
+  },
+  {
     "day": 176,
     "title": "早记录",
     "summary": "从2月4号我开始写一日公司纪实到现在，已经过去了232天，我写了176篇，整整漏了近乎两个月，今天一算我觉得非常恐怖，为了督促自己，只要是我没写文章的那一天，我认为就不算，我不想偷时间。",
