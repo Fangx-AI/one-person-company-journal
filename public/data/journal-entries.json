@@ -1,5 +1,45 @@
 [
   {
+    "day": 183,
+    "title": "纯粹的执行，无视情绪",
+    "summary": "继续推进动画库、Skill 导航站、墨芽和人生指南，并重新整理 GitHub 个人主页，保持多平台视频更新。",
+    "content": "1、AI做视频——动画库上线\n\n收录了 441 件作品，其中 52 条有作者公开的提示词正文，25 件附源码；今天把作品类型和资料筛选拆开，找参考更方便了，部分媒体显示还在修。\n\n打开 Motion Library\n\n[IMG:0]\n\nMotion Library 网站截图\n\n2、 Skill 导航站。\n\n现在有 59 个技能、6 类任务，可以看案例、查用途、收藏，再找对应的安装方式；只是整理了来源和用法，不代表每个 Skill 我都亲自跑过。\n\n打开 Skill Library\n\n[IMG:1]\n\nSkill Library 网站截图\n\n3、小红书一键图文工具「墨芽」\n\n这个工具就完成一件事，做小红书图文和封面。\n\n但是如何要做到爆款呢？\n\n我直接让AI去小红书学习5000条爆款的图文封面，自适应学习，然后自动升级迭代。\n\n[IMG:2]\n\n4、「人生指南」继续改版。\n\n阅读页、DeepSeek 问答、会员页面和个人内容保存都往前推了一步。\n\n新版目前主要在本机，正式部署、真实登录和付款开会员还没全部跑通，先不谈流量做起来了。\n\n[IMG:3]\n\n预估明天全部跑完然后拍视频。\n\n5、顺便把 GitHub 个人主页重新排了一版。\n\n[IMG:4]\n\n换了粉紫色手写横幅，把自我介绍、一人公司纪实等等项目都放进去了。\n\n6、日常拍视频\n\n小红书、抖音、b站、视频号同步发布。\n\n[IMG:5]",
+    "tags": [
+      "AI",
+      "项目",
+      "复盘"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCqIUTuXIwEPT0g6pa4SYsgVIWNnqGTH0tHKCJugnic6kxAkh2T3YBFuRsKIs2zKl2MGXmjugicuTopkEfa3MmPib2M4ba1oGSSGU4/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCrngxb9AcVic6pQHuV5iaQiblhLCbG8Uz4gicLZ0YawFqOLkgibRS4a72m5Arfoe7YiawbBicDliaPSic4zqtyH8JdrmNKaNOG4zr0BgRxI/640?wx_fmt=jpeg&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCq85JIg8Rb0hoYzyMNHuIN0jP0INKRlLQGYUc3oO1icYup3XiayCRibkDz2cRfTibEn8zw3p95ahMHqN8BenVNYdP4IR5ISb4ODMdA/640?wx_fmt=jpeg&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCqIiaI4ia61T6G7K4b3fILM1Td8lQuLibmo4319x0rD3ExiaUDia3NLjSLDFfK0UJ4Z8jT2x2PmRasOCxPdUeWhkaIX5ZQR3cKzUpD0/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCribMib5V4Jic2ibNcJKFMkSYJrs3ESicVekfnGdkEHvQL6fNehrWC5Yonb01LcKK6FMNreibfZSC9RZuAmo2wl9VStQ2eRXSiaaVxal8/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpjCOoBX4Y2xGkrxlsQzyB7bPTvt71JmaGlzyjEAicaS7TukI31B2C11ZWc0QgTsS1kwAHDLGy8daicbUiczcLIux9dKhiaTR2dQNA/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoXJyJXVXicwS5zKRtsYW98rad9gSs6TMwdZ6wKKnpIoB6JX9K0EQEyP1EicRuRibM6cooZQSIO2YH4kgicM7fiayicWmUYtMpWuagsE/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-04",
+    "slug": "day-183"
+  },
+  {
+    "day": 182,
+    "title": "我把全网爆火的《高性价比人生指南》做成网站",
+    "summary": "《高性价比人生指南》火了。我围绕这份开源内容，做了一套更方便使用的工具。",
+    "content": "《高性价比人生指南》火了。\n\n我围绕这份开源内容，做了一套更方便使用的工具：\n\n[IMG:0]\n\nPDF 阅读入口：整合原作者的完整版下载，方便保存、离线阅读。\n\nObsidian 知识库：把建议整理成独立笔记，用双链串起来，也能加入自己的记录。\n\n在线网站：按场景查、按关键词搜，支持收藏和分享，手机打开就能用。\n\nAI 问答：接入 DeepSeek，直接描述问题，系统查找相关条目，再整理成带原文依据的回答。\n\n我们还做了个人指南原型：把有用的回答保存下来，修改、补充、记录行动，再导出到 Obsidian。\n\n[IMG:1]\n\n网站目前可以免费查阅；AI 问答和个人指南已在本地跑通，在线服务正在准备。\n\n明天直接给大家用上。",
+    "tags": [
+      "AI",
+      "产品",
+      "工具"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCpZLvPaBbCnCiaHkwLWngtAcKtRo2VsPTO0l1Uwm9NT8TrLXibicr8YyVdoNsHtl3lIzs0sR4jweIB20W84PKZQIfkkXTaO4WEjt8/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCrcHP7pnib0qHFY4XJxq0dIt6cM1SH66aibBDy30cklL2YlCnoibGsJrRjHwyicIYHnVQic5NrbnJ3P83YrXp5tntBLpMq52o1genzs/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCqiaBzlC4AjAYcE216doTr1d4nRJ6XUVibBSTB8eib2YcneVH0vGgSqeHDCUV2CognUUdFlL0ic0ibRoG6DedDZaTmVmboia4LGfxOe0/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-03",
+    "slug": "day-182"
+  },
+  {
     "day": 181,
     "title": "一点点优化",
     "summary": "这两天发的视频发的还蛮多的，大概有十条左右吧。有的是AI做的，有的是我的口播。",
