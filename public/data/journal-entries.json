@@ -1,5 +1,174 @@
 [
   {
+    "day": 192,
+    "title": "一人公司纪实突破 400 Star！",
+    "summary": "今天，我的「一人公司纪实」GitHub 项目突破 400 Star 了，目前是 434。很开心！",
+    "content": "今天，我的「一人公司纪实」GitHub 项目突破 400 Star 了，目前是 434。\n\n[IMG:0]\n\n很开心！\n这个项目主要就是文字记录。做了什么产品，拍了什么视频，试了什么工具，卡在哪里，下一步准备干什么，都往里面放。\n从最早做桌面待办清单，到后来拍口播、做网站、研究 AI 工具，翻一下目录，就能看到这一路都在折腾什么。\n里面有产品上线，也有软件被封、方向调整，还有没做完的事。\n我有主业，副业也不只有开发。写文章、拍视频、学习和整理，这些都占时间，也都算我做过的事情，所以一起记下来。\n看某一篇，可能只是几件很零碎的小事。\n放在一起，就能看出一个项目怎么开始、怎么修改，一个想法后来有没有继续做。\n感谢大家愿意收藏，也欢迎来翻翻，挑自己感兴趣的看。\n项目地址：一人公司纪实",
+    "tags": [
+      "GitHub",
+      "开源",
+      "日志"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCoHOVovAlozmbxW4J5gyfxrAa6EDMGPod72OWZNeBKY0Ndzudj5t1cwcRMGkibFxEpvRp4phF3raAjibG8DuK8MhQjpqfPsUkiaTY/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpr96aC6v3nEh7QGoLiaPQZXQZtZOb1JYRkxsiaDNZZiaVak6CicXAmaQxYf0fCz7ib6picV5vGEuZhQS6T6tsEZ6uibQIwhdialVfrFo4/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-16",
+    "slug": "day-192"
+  },
+  {
+    "day": 191,
+    "title": "Geo-doctor",
+    "summary": "分享两件事情：我最近完全解决了封面的问题，也开源了 Geo-doctor。",
+    "content": "分享两件事情\n1、是我最近完全解决了封面的问题。\n我之前提到过我让Codex去学习了小红书几千个AI相关的封面（是真真切切抓取并学习的）。\n现在我的封面基本上不存在问题了，每次出来产出的效果我都比较满意了，节省了我大量时间。\n\n[IMG:0]\n\n[IMG:1]\n\n后续我会把项目开源出来并优化。\n2、我开源了Geo-doctor\n\n[IMG:2]\n\n我正在拼命学习geo，目前我已经获取了几个客户了，但是由于我对自己的效果没有把握所以我暂时都没有接单。\n如果有想做geo的朋友，一起交流学习的，后续我们可以建个群一起交流。\n同时我开源了我的Geo项目，大家可以看看。\n直通地址：https://github.com/Fangx-AI/geo-doctor\n如果大家能给我点个Star就更好了，我会很开心，感激不尽。",
+    "tags": [
+      "GEO",
+      "开源",
+      "AI"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCqYLFyGxsdicDd368qlcooibxw5ickVT1riaqQBN7PCsIP5GR5TsuXTXrrVQXWswhxWTjKwFicemrRGF2dTJMoMrcINqxveplXDAkmc/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpBsV78dvdWia9DibGib7ehgxxsXYC2ZqmNGBsS6TEPab9bq5wRxiaXpSvkclNdmEQ6vN97WpibpcibDPEVS8nSZjQFoor3Lwy4dFzm8/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpXibE6NtSZ1v4Gh3wiabY4HIoibRibJlibs9l6yllIMrK0UbGvUzqFjT11gXUfzICYib7xkeictgUicicze9H2YwhsSn0HnZCN3rRWBXibw/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqZpjGsNPA3v1RkVtwPrkLfrxoQDQsMD0SClTTK8bFyyFKVZqbCCPt41TkZlYWrAY0MAz3M3yQc8UHYbib0u8yg8qhQib5icKS9K4/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-15",
+    "slug": "day-191"
+  },
+  {
+    "day": 190,
+    "title": "纷纷开且落",
+    "summary": "木末芙蓉花，山中发红萼。涧户寂无人，纷纷开且落。",
+    "content": "最近准备深耕 GEO 这个赛道，接下来一段日子，内容都会围绕 GEO 写。\n这个公众号往后就只写一人公司纪实，不再做教程类文章。\n我估摸着关注我的人，大多也是想看我真实的记录，毕竟教程类内容，别的博主写得远比我成熟。\n但我能保证，我的文字里，人味要浓得多得多。\n时常感慨时光走得太快。这周单位安排培训，开车途中路过母校。学校分南北两区，桥下是隧道。我穿行在隧道旁的路上，两边林木繁茂，缀着几丛粉花。我慢慢开着车，静静望着这些花。在这里读了三年研究生，从前竟从没认真留意过它们。或许是花长在路中间？又或许，我是第一次在临近秋天时驱车经过这里，刚好赶上它们开得最盛的时候。\n无论缘由，恰好被我撞见，算是一种幸运。 我被这景致触动，这份触动里，又掺着一点青春的遗憾。\n毕业到现在不过两年半，刚满二十八岁，可心里总觉得自己老了些。时代往前跑得太快，年龄焦虑，一点点漫上来。说不清是什么滋味。\n花只管开落，不会问谁来看。我好像也是懵懵懂懂。\n我其实挺要强的，可又带着几分出世的随性。但凡我认准一件事，便要全力去争，拼尽全力去达成目标；可出世的随性，让我觉得多数事情本就无关紧要，旁人的眼光、外界的评价、稳定的岗位、固定的居所，我都不太放在心上，只顺着自己的心意行事。\n就写这份一人公司纪实来说，它在我所有自媒体项目里收益最低，却占了最重的分量，耗去我最多时间。就算时常遇到限流，我依旧坚持更新。它是我往前走的基石，代表我还在用力，还在挣扎，试着和命运较劲，想活成自己想要的样子。\n这是我愿意做，也真心喜欢愿意坚持下去的事。\n也许我努力或许折腾许久，囿于认知或是别的局限，最终达不到目标。但至少不会留下太多遗憾，我实实在在努力过。就像《天道》里那句话：倘若我的本事只配穷困潦倒，那便穷困潦倒；倘若我的本事能让我腰缠万贯，那便腰缠万贯。\n现在我没有那么执着于结果，更看重过程本身。\n很多事大抵如此。\n我很喜欢想起王维那首《辛夷坞》：\n木末芙蓉花，山中发红萼。\n涧户寂无人，纷纷开且落。",
+    "tags": [
+      "思考",
+      "日志"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCrR9xKD22xHPYic3rPttoOVicoxmMqXibEAibvBEvtjqezDHOXRtHFNLmAoASar4H6wKkSvLmaNpXIpPsn9Bd3q20J9DRicAVAkDe7Q/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-10-14",
+    "slug": "day-190"
+  },
+  {
+    "day": 189,
+    "title": "人们对大模型（LLM）能力的认知差距正在急剧拉大",
+    "summary": "Andrej Karpathy 最近发布了一篇文章，核心观点是：人们对大模型（LLM）能力的认知差距正在急剧拉大。",
+    "content": "Andrej Karpathy 最近发布了一篇文章，\n核心观点是：人们对大模型（LLM）能力的认知差距正在急剧拉大，已经从“两拨人各说各话”变成了一个非常陡峭的“漏斗”。\n现在大家对 AI 能力的理解出现明显分歧，主要原因有两个：\n1. 使用版本和时效问题\n很多人还停留在去年免费版 ChatGPT 的印象（幻觉多、各种翻车视频），这些老模型完全不能代表今年的前沿智能体模型（如 OpenAI Codex、Claude Code）。\n2. 能力分布差异大\n即使付费使用最强模型，日常搜索、写作、建议类任务的提升也没那么夸张。\n真正发生质变的是编程、数学、研究这类可验证奖励（verifiable rewards）的技术领域，因为这些领域既适合强化学习训练，又最赚钱，所以公司把最大力气花在这里。\n结果就是：一部分人觉得 AI 还是“傻傻的聊天机器人”，另一部分在技术岗位上用最强模型的人则觉得能力进步“令人眩晕”，两边完全对不上话。\n而在现在的十月，不只是认知上的差距了这个认知差距正在进一步扩大，形成了一个非常陡的漏斗结构，大致分成四层。\n[IMG:0]\n\n①约 60 亿人（全球人口的 ~75%）\n几乎没怎么接触过 LLM。\n②约 10-20 亿人（~20%）\n偶尔用免费版 ChatGPT 类产品的普通用户。\n他们看到的是“有点笨的聊天机器人”，当成更好的搜索引擎、写作辅助工具，或者偶尔让智能体帮忙订机票。\n很多非技术背景的专业人士（包括不少高管）也属于这一层——他们知道 AI 在发生什么，但主要是二手信息，感觉比较抽象。\n③约 2000 万人（0.2%）\n在数学、编程等领域专业使用前沿级模型的人。\n他们亲眼看到：以前需要几周甚至几个月的大项目，现在用一句话提示就能让智能体完成。\n包括开发应用、复制应用、翻译应用、从二进制反编译应用等。\n④约 5000 人（0.00006%）\n能接触到公司内部最前沿系统的人。\n外部世界已经看到了预告：成千上万个智能体协作数周，做软件超级项目、批量挖掘 0-day 漏洞、以机器速度进行网络攻防、发现新科学、推进数学前沿……\n这些以前顶级专业人士需要多年才能完成的事，现在正在发生。\n人类的审核和理解速度已经开始跟不上（他举例说，OpenAI-HF 事件几个月后还有人在做“考古”；数学家可能还要慢慢消化那 722 篇前沿数学手稿）。\n现在处于非常两极分化的阶段。\n公众大多没真正用过这些系统；用过的人看到的多半是“笨机器人”。\n大多数专业人士也只感受到有限提升。而极小一撮专业人士正在经历“曲线突然垂直向上”的眩晕。\n这些事情在同一时间同时发生。\n神奇的世界。\n我常常说，每次使用 AI 的时候我会感受到恐惧，仿佛我在凝视深渊，深渊也在凝视我。",
+    "tags": [
+      "AI",
+      "思考"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCpDGLw1pTXcribPaqulFnMTeEOazKVnKZn74JCG5j5wxqHkpZ03ibibbjD9l7ab0ic55COVv8gz3Fd3eqrPGOeibiaWgLXAkMlQxRs10/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoA8Eu16RYnW830NFaNu9YgmH8VpzfmK1fRpBianiaI95wFoOblX1AckQp84ITaeKObWpOWBAlPQADia9vyhyCzgqIgMFXaI3Tk6I/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-13",
+    "slug": "day-189"
+  },
+  {
+    "day": 188,
+    "title": "AI一切化，一切AI化",
+    "summary": "为什么“AI一切化，一切AI化”是对的？从理论和实操两方面谈谈。",
+    "content": "“为什么 AI一切化，一切AI化是对的？\n孙宇晨说他现在「全部 AI 化」：吃饭拍照交给 AI 算热量，训练录视频交给 AI 记录，每天让 AI 给他出日报。\n很多人听完第一反应是：「这不就是有钱人闲得慌、折腾工具吗？跟我一个普通人有什么关系？能帮我提升自己吗」\n\n我们从两方面来讲：一是理论，二是实操。\n毕竟我们还是要讲究一个知行合一。\n一切 AI 化、一切AI化的本质目的——是为了提高你生活的科学性、合理性，让你生活的更健康，更快乐，更合理。\n大家有时候真的低谷了AI的强大性，AI 就像一个超级博士一样。\n还不是那种单一领域的博士，而是汇聚了人类有史以来在互联网上所有知识的超级博士。\n\n[IMG:0]\n\n换句话说，你去请个大学生，一个小时都还得几百块呢。而一个超级博士，随时随地回复你，你想怎么问就怎么问，一个月只要两百块，这简直在以前不敢想象。\n\n[IMG:1]\n\n我记得我以前初高中的时候喜欢看钢铁侠，也希望拥有一个自己的贾维斯。\n现在其实已经是贾维斯的雏形了，甚至在一定程度上都超越了贾维斯。而大家不愿意去用，我是觉得很不理解的。我只能认为你是不愿意给自己一个提升，或者说进步的机会。\n普通人用 AI 有什么用？\n我觉得不要去划分普通人和精英人群用 AI，因为目前为止，区别是不大的。\n现在还是 AI 快速发展、市场蛋糕初步定型的阶段，普通人用的 AI 和有钱人用的 AI，本质上几乎是没有区别的。\n孙哥用的是 Claude，你不一样可以用 Claude 吗？哪怕你用不上 Claude，你去用 Codex；Codex 你用不上的话，你就去用 DeepSeek、豆包。\n我觉得本质上也不会差很多——因为把自己 AI 化这个工作，对于 AI 来说是一个很简单的任务，根本就不需要很强大的 AI，只需要你有很强烈的信念和使用欲望。\n有时候我都觉得「AI」这个词太模糊了，因为它太广泛了，不细化就无法突出它的重要性。\n如果单论身体健康、薄肌而言，我觉得把 AI 叫做「天才医生」，会让大家更容易接受一点。\n你想象一下，有一个私人健康医生，随时随地监控你的情况，随时随地分析你的情况，随时随地回答你的问题。在 AI 没有出来之前，这是一件天方夜谭的事情。\nAI 的出现之猛烈，甚至让大家忘记了这件事有多么神奇。\n如果我们把自己的生活一切 AI 化：我们每天的热量可以得到实时的监控，我们身体每天的运动状态可以实时监控，我们的皮肤状态、睡眠状态、合理消费，我们的 everything，都可以利用人类最前沿、最顶级的精华智慧。这是一件多么幸福的事情啊。\n\n[IMG:2]\n\n你可以最大程度地去提高你自己的能力，去拓宽你的职业边界，去提高你的认知水平，就像海绵一样，不断汲取人类海洋中的智慧。我光是想到这些，就觉得很兴奋。\n好，说完理论，我们来讲实战。我会讲得很细，都是我自己实际操作过的。我尝试过三种路径：\n一是 Hermes；\n二是飞书豆包 + 多维表格；\n三是建立个人 MD 文档，用 Obsidian 之类的工具。\n\n[IMG:3]\n\n我今天着重讲前两个，我都会详细讲怎么操作，以及需要用到的提示词和 skill。最后一个Markdown+Obsidian后面序会单独出一个长篇视频来讲。\n【实战部分】\n第一种，快捷方便，不过可能要花 68 块钱；\n第二种，个性化一点，价格也低一点。\n大家根据个人情况自己选择。\n方法一：豆包 + 飞书多维表格\n如果你想以最快的方式去连接你的生活，我最推荐给你的是豆包。\n为什么是豆包呢？\n1、方便，首先是你手机上直接可以使用，\n2、准确，豆包可以和飞书的多维表格直接互动，这是最最关键的。\n如果你直接在对话框里和 AI 聊天，讲述你的个人情况，聊了一两个月之后，你会发现 AI 把你之前跟它说的东西忘了。\n而豆包 + 多维表格完美地解决了这个问题。\n唯一的代价是你可能要花68块钱每月开会员。\n当你把你的情况发给豆包，豆包会把你的个人档案自动做成多维表格进行存储。这是一种实质性的记录：不管你记录了几个月还是几年，数据都是实打实的，永远不会出现 AI 幻觉。\n在这里我给大家一个提示词。\n提示词 ①：建档 + 每日记录（【Claude 起草】）\n“可以直接复制给豆包。中括号里的内容换成你自己的。\n\n你现在是我的私人健康管家。请帮我在飞书多维表格里建立并长期维护我的个人健康档案。\n\n【我的基本情况】\n- 性别：[ ]，年龄：[ ]，身高：[ ] cm，体重：[ ] kg，体脂率（如知道）：[ ]%\n- 目标：[例如：3 个月减脂 5 公斤 / 增肌 / 改善睡眠]\n- 作息：一般 [ ] 点起床，[ ] 点睡觉\n- 运动基础：[例如：零基础 / 每周跑步 2 次]\n- 饮食习惯和忌口：[ ]\n- 正在吃的补剂：[例如：蛋白粉、肌酸、维生素 D]\n\n【请建立以下数据表】\n1. 「个人档案」表：记录上面的基本情况，每次体重、体脂变化都新增一行，保留历史。\n2. 「每日记录」表，字段包括：日期、早/午/晚餐与加餐内容、估算热量、估算蛋白质（克）、饮水量、补剂打卡、运动项目与时长、睡眠时长、入睡时间、今日状态（1–5 分）、备注。\n3. 「每周复盘」表：每周日汇总本周平均热量、蛋白质、睡眠、运动次数、体重变化。\n\n【之后的工作方式】\n- 我每天会用文字或照片告诉你吃了什么、做了什么。你负责识别、估算并填进「每日记录」表，不需要我手动填。\n- 每次记录后，用 3 句话以内告诉我：今天还差多少蛋白质、热量是否超标、明天一个最该改进的点。\n- 每周日主动帮我生成「每周复盘」，指出最大的问题和下周的一个小目标。\n- 热量和营养都是估算，请标注「估算」，不要假装精确。\n- 回答我之前，先查阅表格里的历史数据，不要凭记忆回答。\n- 如果我的描述不清楚，先追问一句再记录。\n\n现在请先根据我的基本情况，把表格建好，然后告诉我第一天该怎么开始记录。\n（你的口述）\n你还可以给自己设计一个游戏升级模式，用积分来激励自己。比如我喜欢读《凡人修仙传》，我就给自己设置了一套升级、记录的机制。我的饮食、睡眠、吃维生素、运动，都会按照修仙的境界来升级、记录、激励。\n提示词 ②：修仙升级系统（【Claude 起草】）\n“用的是修仙小说通用的境界设定，喜欢别的题材（比如武侠、游戏段位）可以让豆包照着改。\n\n请在我已有的健康档案基础上，加一套「修仙升级系统」，让我把每天的健康习惯当成修炼。\n\n【世界观】\n我是一名刚踏入仙途的散修，每天的饮食、睡眠、运动、补剂就是我的修炼功课。修为（经验值）积累够了就能突破境界。\n\n【每日修炼与修为奖励】\n- 早睡（[23:30] 前入睡）：+10 修为｜睡足 [7] 小时：+10\n- 蛋白质达标（[ ] 克）：+15｜热量控制在目标范围：+10\n- 完成力量训练：+20｜有氧或步数达标（[8000] 步）：+10\n- 按时吃补剂（维生素等）：+5｜喝水达标：+5\n- 当日全部完成：额外奖励「灵石」×1\n- 熬夜、暴饮暴食：-10 修为，记为「心魔入侵」，但不清零，第二天可以补救\n\n【境界体系】（每个大境界分初期、中期、后期）\n- 练气期：0–300 修为（养成记录习惯）\n- 筑基期：300–1000（作息和饮食稳定）\n- 结丹期：1000–2500（体态开始明显变化）\n- 元婴期：2500–5000（习惯完全内化）\n- 化神期：5000 以上（可以带别人一起修炼）\n突破大境界时，请给我写一段 100 字左右、有仪式感的「突破描述」，并总结这一阶段我真实的身体数据变化。\n\n【法宝与奖励】\n- 灵石可以兑换我自己设定的奖励：[例如：5 灵石＝一顿喜欢的饭；20 灵石＝买一件新运动装备]\n- 连续 7 天全勤，获得一件「法宝」称号（比如「不眠之剑」「铁胃葫芦」），记录在档案里。\n\n【表格要求】\n在多维表格里新增「修炼日志」表：日期、当日修为、累计修为、当前境界、灵石余额、心魔记录、当日一句话点评。\n每天我汇报完，用修仙小说的口吻回复我（不超过 5 句），告诉我今日修为、离下次突破还差多少，以及明天的修炼重点。\n数据必须如实记录，奖励规则不能因为我求情而放水。\n方法二：Hermes\n第二种方法是 Hermes。\n如果说豆包 + 多维表格是「请了一个记账的管家」，那 Hermes 更像是「养了一个会成长的私人助理」。\n它是什么？ Hermes 是 Nous Research 做的一个开源 AI 智能体，软件本身免费。它和普通聊天 AI 最大的区别有三点：\n第一，它有长期记忆。你告诉过它的事情，它会一直记着，不会聊几个月就忘了。\n第二，它会自己学技能。同一件事你让它做几次，它会自己总结出一套固定做法，下次做得更快、更好。用得越久，它越懂你。\n第三，它会主动找你。你可以跟它说「每天晚上 10 点给我发一份今日总结」，到点它就自己发过来，不用你开口。\n\n[IMG:4]\n\n为什么说它更个性化、更便宜？ 因为模型是你自己选的。软件不要钱，你只需要接一个大模型。可以接国外的，也可以接国内便宜的模型 API，按用量付费，一个月的成本通常比会员还低。\n怎么开始？\n我给大家一个提示词，大家直接发给任何的Agent就行了，其中包含安装、接入大模型（如Deepseek等）、个人建档、设置定时任务和接到手机上（你可以接入飞书等）。\n你是一名耐心的技术助理。请带我在这台电脑上从零搭建 Hermes Agent（Nous Research 出品的开源 AI 智能体，官网：https://hermes-agent.nousresearch.com/），把它变成我的私人健康助理。我不懂编程，请每一步都用大白话告诉我在做什么，执行任何安装命令前先跟我确认。\n\n【第 1 步：检查环境并安装】\n- 先判断我的电脑系统（Windows / macOS / Linux）。\n- 以官网和官方文档为准进行安装。官网目前给出的安装方式：\n· Windows（PowerShell）：irm https://hermes-agent.nousresearch.com/install.ps1 | iex\n· macOS / Linux（终端）：curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash\n· 也可以从官网下载桌面版安装包\n- 执行前先打开官网核对命令是否有更新；不要运行任何非官方来源的脚本。\n- 安装完成后验证是否能正常启动。\n\n【第 2 步：接入大模型】\n- 默认帮我接入 DeepSeek（性价比高，国内可用）。DeepSeek 的接口兼容 OpenAI 格式，具体接口地址和模型名称以 DeepSeek 官方文档为准。\n- 告诉我去哪里注册、怎么生成 API Key。API Key 由我自己粘贴进配置文件或环境变量，你不要让我把 Key 发在对话里，也不要把它显示或打印出来。\n- 配好后发一条测试消息，确认模型能正常回复。\n- 如果我想换成其他模型（比如 Claude、GPT、通义、Kimi），告诉我改哪里。\n\n【第 3 步：个人建档】\n- 一次问我一个问题，帮我建立健康档案：性别、年龄、身高、体重、体脂率（如知道）、目标、作息、运动基础、饮食习惯与忌口、正在吃的补剂、身体旧伤或特殊情况。\n- 把档案写进 Hermes 的长期记忆，同时在本地存一份 Markdown 备份（例如「我的健康档案.md」），并告诉我文件位置。\n- 之后每天的饮食、运动、睡眠记录，也按日期追加到本地 Markdown 文件里，保证数据永远在我自己手里。\n\n【第 4 步：设置定时任务】\n- 每天 22:00：提醒我汇报今天的饮食、运动、睡眠和补剂，然后生成一份日报（热量与蛋白质是否达标、睡眠情况、明天最该改进的一件事），热量和营养数据要标注「估算」。\n- 每周日 21:00：生成周复盘（本周平均数据、体重变化、最大问题、下周一个小目标）。\n- 可选：每天 07:30 发一条早安提醒，结合昨晚睡眠给出今天的训练建议。\n- 提醒我：电脑关机或 Hermes 没在运行时，定时任务不会执行；如果需要 24 小时在线，告诉我放到云服务器上的方案和大概费用。\n\n【第 5 步：接到手机上】\n- 优先接入飞书，让我在手机上就能跟它聊天、收日报。\n- 先查官方文档确认 Hermes 当前支持哪些消息渠道：\n· 如果原生支持飞书，按官方方式配置；\n· 如果不支持，用飞书开放平台的机器人来实现推送和对话，并一步步告诉我需要在飞书后台点哪里；\n· 如果飞书走不通，再退回到官方支持的渠道（如邮件、Telegram、Discord）。\n- 需要登录或授权的网页操作由我自己完成，你只告诉我怎么做。\n- 配好后，让 Hermes 往我手机上发一条测试消息。\n\n【第 6 步：验收与交付】\n- 完整跑一遍：我汇报一条饮食记录，它能记住、写入本地文件，并给出反馈。\n- 最后给我一份清单：装在哪里、用的什么模型、档案和记录存在哪个文件夹、定时任务有哪些、手机怎么联系它、以后怎么备份和迁移。\n\n遇到报错先自己排查，解决不了再用大白话告诉我原因和下一步怎么做。\n修仙升级系统在 Hermes 上也一样能用，把提示词 ② 发给它就行。而且因为它会自己学技能，用一段时间之后，它会越来越懂你的修炼节奏。\n提醒两点：\n一是，Hermes 是装在你自己电脑上跑的，电脑关机，定时任务就不会执行。想让它 24 小时在线，可以以后再考虑放到云服务器上。\n二是，你的记忆和技能都存在本地，换电脑之前记得备份它的数据文件夹。\n两种方法怎么选？\n想今天就开始、不想折腾：选豆包 + 飞书多维表格。\n\n想要一个越用越懂你、会主动找你的助理，愿意花一个下午研究：选 Hermes。\n\n不管选哪一种，最重要的不是工具，而是坚持不懈。\n一切AI化，AI一切化。",
+    "tags": [
+      "AI",
+      "工具",
+      "效率"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCozGnLBnnlaJSOPu4iaIoWAVB5U072mjOAwSCgMDGpibTCicO2WZHfNzpyFRTAgfKy5wLG8LwRDU3RiaNABhgt8SefRChBZI3icArYc/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCrnmEzGSpM3NnNpqPC4PLfdcOo1LXVGgAFRrwgVmWbp5dzxbNNXKd3JwXKxQ618pVIRoz8hl8TPlic2E5pFR8NsxMZMmUCa9vicE/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCq3YYVVxT3l0KzkjQsbNDALSq0HwVOP59puKOSt3SticpiajpZvA8GJzcgCoDYG3goq78Xu7YaKZXKFcA0r8kLB3BvvoqOqyHqLk/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCqP81h5Hiae78Ly2vGtG0PBzG30UbCaONvpa0KQG5Ank9plOn0Zribvv7ftschFA4xMyVLb4n6fAka71D5nY7Pdib5hGicAOFttK2E/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCqmXIM6LeDFVY4RNeclCoDnZO4mDicvNZRkibVLRCX9n8PXe70xSOqUIZ4W8OrkjUgib9hiaWS2NxIC68cpG7XbWyIC3TiaiaOT6bWe8/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCpiaFpNQzfaSn6NpDwWTngkHZG5jZls1YicusCnR8stLvA4o1YYVLyBrTXicfsGxxxElMDNEAiaKQal2S7NVADicuIhBUyoSYTQcrA8/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-12",
+    "slug": "day-188"
+  },
+  {
+    "day": 187,
+    "title": "孙哥四小时播客长谈拆解",
+    "summary": "强烈推荐大家去看最近邵艾伦和孙哥的长访谈《年轻人如何抓住AI时代的机会》，整整四个小时。",
+    "content": "[IMG:0]\n“强烈推荐大家去看下最近的邵艾伦和孙哥的长访谈《年轻人如何抓住AI时代的机会》，整整四个小时，我一点没加速的看完了，给大家总结一下。\n这篇文章能帮你省下 4 小时。\n\n先说结论：这场访谈到底在讲什么？\n访谈第一个问题很直接：\n\n如果你回到 20 岁，没人脉、没资源，怎么重新开始？\n孙宇晨的回答第一句是：\"也还是不难。\"\n接下来四个多小时，他讲的可以压缩成一句话：\n“先升级认知和工具，再去全球市场中提供价值，财富自然就来了。\n\n乍一听其实像鸡汤，但是我觉得每一条其实都是很有道理的，只是和我们现实社会接触的大众三观不一样，所以会觉得很颠覆。\n至少孙哥给的每一条都有可以今天就执行的动作，而且大部分零成本。\n01｜生活 AI 化\n原片定位：00:01:57\n\n[IMG:1]\n原片截图 00:02:01｜开场，孙宇晨讲自己现在的一天\n孙宇晨描述了自己现在的一天：\n吃饭前拍一张餐桌，吃完再拍一张，丢给 Claude 算热量、告诉他先吃哪道菜；\n\n训练时让教练录视频，AI 记组数、重量，下次自动加一点（渐进超负荷）；\n\n戴 Oura Ring 抓睡眠和消耗，和饮食数据相减，控制热量缺口在 600 卡以内；\n\n每天 AI 自动出一份日报。\n\n[IMG:2]\n孙哥要求所有记录都存成本地的 MD 文档，照片也全部保存，再写一份 README。这样哪天换掉 Claude Code、改用 Codex，新的 AI 读完文件夹就能直接接手。\n先谈下为什么这个行为一定是有效的。\n心理学里有个概念叫「自我量化」（Quantified Self）：被测量的东西才会被改善。\n\n[IMG:3]\n\n大多数人的问题不是不努力，而是对自己的状态一无所知，AI 化的第一步就是把模糊的自己变成清晰的数据。\n做起来也很简单：\n手机里建一个文件夹，名字就叫「我的数据」；\n\n选一个最想改善的领域（饮食 / 睡眠 / 开支 / 学习），连续记录 14 天；\n\n每天把记录丢给任何一个 AI，让它用 Markdown 格式输出当天总结。\n\n02｜普通人零资源起步\n原片定位：00:08:30\n\n[IMG:4]\n原片截图 00:09:02｜从「月可支配收入不到 1000 元」讲起\n孙哥专门讲了「最底层」的情况：月可支配收入不到 1000 元。\n建议其实还慢具体的：\nClaude Code 一个月 200 美元，用不起就不用；\n\n换成国产的同类编程工具（他提到了智谱、Kimi 等），很多有免费额度；\n\n没电脑？手机也行，建个文件夹照样能做；\n\n哪家有活动就用哪家，「今天吃东家，明天吃西家」。\n\n关键其实就是要花时间，你要把你生活的方方面面全部喂给AI，花 2 到 4 个月积累自己的各类数据，让 AI去帮你分析方向。\n穷人最贵的不是钱，是试错成本。\nAI 把「请教一个懂行的人」的成本降到了接近零，在学习知识这条道路上，其实AI平权了信息差。\n03｜与 AI 共决策\n原片定位：00:15:46\n\n[IMG:5]\n原片截图 00:15:50｜「百分百相信 AI」\n这是整场访谈最「极端」的观点：百分之百相信 AI，让 AI 当掌舵者。\n孙哥打了个比方：如果在开飞机，90% 的时间交给 AI，自己只花 10% 去调整。\n我在生活中其实也是无脑相信AI的人（但是我不相信豆包），我对AI的信任程度大概是Claude > Codex > 其他大模型。\n在路上开车也是的，任何路我都会开导航，不是我找不到路，而是我觉得加持了AI导航之后，有可能会有更捷径更不堵车的路走，而且我也相信人的大多数看法都是片面的，主观的，浅显的，只愿意相信自己所相信的。\n所以如果一个AI，没有幻觉，说真话，是可以极大程度提高自己的认知的。\n孙哥也讲了一个例子：他以前一直觉得蛋白粉是「科技」，跟用药差不多。和 AI 讨论之后才明白，蛋白粉和肌酸本质上就是食物，一个旧观念当场被翻过来了。\n所以真正的方法是：\n\n[IMG:6]\n同一个问题，问三个顶尖模型（中美都要有），让它们各出上、中、下三策，取其中。\n不同意就补充条件、让它重新分析。\n这就是决策科学里的「群体智慧」：多个独立判断的平均值，往往比任何单个判断都更准。\n你不是在盲信 AI，而是在用 AI 对冲你自己的偏见。\n04｜年轻就是最大的本钱\n原片定位：00:25:38\n\n[IMG:7]\n原片截图 00:25:40｜「所以年轻就是财富」\n问：年轻人未来几年最值得 all in 的赛道是什么？\n孙宇晨的回答出乎意料：AI 时代所有东西都会变便宜，唯一值钱的是寿命。\n所以年轻本身就是财富。\n举个数学的例子：过去中国学生 IMO 拿奖无数，顶级数学大奖却很少，一个重要原因是解题思路掌握在少数顶尖导师手里，你没进那个圈子就不知道路。现在 AI 把全世界的思路都学进去了，一个高中生借助 AI，可能直接拿到「博士级」的思路。\n此外，天文学可能迎来本质性突破，因为望远镜传回了海量数据，过去枯燥到没人有时间处理。\n年轻是最大的复利本金。\n05｜赚全世界的钱\n原片定位：00:32:40\n\n[IMG:8]\n原片截图 00:33:54｜token 中转站的例子\n\n播客里举了一个例子：同一个 AI 订阅服务，在不同国家价格差异很大，有的地区便宜，美国最贵。\n这就是信息差，基于这个信息差是可以制造价值的。而且这个价值是全球性的，理论上你可以和地球任何上任何一个人做生意，也不是把眼界放在自己的国家去内卷。\n这背后是一个更大的框架：\n度量衡要变： 不能只考虑本市、本省、本国，要用全球视角；\n\n核心问题只有一个： 你能不能把自己的价值体现在客户面前；\n\n中国的优势： 世界工厂、产能充足，把东西、主意、想法卖到全世界都是机会。\n\n4 亿中国年轻人不要在内部互相卷，而是去服务全球 80 亿人，以及未来越来越多的 AI。\n我个人也认为，需求池足够大，这个行业不行，换一个就是。\n经济学里最古老的赚钱逻辑就是套利：发现两个市场之间的差异，把价值从低处搬到高处。AI 让翻译、调研、客服的门槛几乎消失，个人第一次具备了做跨国生意的能力。\n06｜看清楚再动手\n原片定位：00:40:21\n\n[IMG:9]\n原片截图 00:40:34｜讲「先看 100 套房」\n如果你看过孙哥2016年的播客，有个著名的「30 岁前不买房、不买车、不结婚」的理论。\n\n但如果一定要买呢？\n他的答案是：先看 100 套房，先看 100 辆车，别急着做决定。\n\n看多了，别人怎么报价、什么值什么价，你自然就有了判断标准。\n这个数字当然是有些夸张，但是这个理论概念我觉得可以学习一下，这里他引用了一个数学模型：\n\n[IMG:10]\n假设一共 10 套房，看过的不能回头买，那么前 3 套只看不买，用来建立基准；之后一旦遇到比前面都好的，立刻拿下。\n“这就是数学上的「最优停止问题」，经典解是先观察约 37%的选项。\n10 套房先看 3 套，正好吻合。\n\n这套逻辑不只适用于买房。职业、城市、合伙人、赛道，样本量不够时做的决定，本质上都是在赌。\n所以孙哥建议年轻人别太早给自己下定论，先多学、多听、多看，把 benchmark 攒够再说。\n07｜逐水草而居\n原片定位：01:22:47\n\n[IMG:11]\n原片截图 01:28:07｜讲 OpenAI offer 的例子\n孙宇晨说自己很欣赏游牧民族，可以用五个字概括：逐水草而居。\n哪里有水有草，就去哪里。\n他用了一个让人很难反驳的场景：\n“明天早上 OpenAI 说录取你，来旧金山上班。你说「我在北京买了房，能不能在北京工作？」\n大概率，这个机会就没了。\n\n我其实也想成为一个游牧民族，想去世界的各个地方去看，去旅游，在途中我可以自由的工作，做自己想做的事情，拍自己想拍的视频，写自己想写的文章，这大概就是我觉得最好的工作状态吧。\n\n[IMG:12]\n金融学里有个概念叫期权价值：保留选择权本身就有价格。一笔沉重的固定承诺，本质上是你提前卖掉了未来的选择权。\n其实我觉得核心的理论是，不是让你不成家，而是在还在找方向的阶段，尽量不要让重资产、长周期的承诺挡住你走向更大的机会。\n08｜让机器读得懂的东西才值钱\n原片定位：01:38:00\n\n[IMG:13]\n原片截图 01:40:04｜「未来没有成为 AI 的语料」\n这是我个人认为整场访谈最深的一个观点。\n他说人类正在从「碳基」向「硅基」过渡，数学、货币、所有发明都要翻译给机器，机器读懂了才能上路。他用自己的老本行举例：SWIFT 跨境汇款系统诞生于没有计算机和 AI 的年代，他所做的就是把这套东西翻译成机器能直接处理的形式。\n我记得里面一句很有冲击力的话。\n“一个东西如果没有成为 AI 的语料，它就等于从来没有发生过。\n\n[IMG:14]\n如果你的经验、作品、方法论，如果只存在于你的脑子里或者朋友圈里，在 AI 时代就是不可见的。\n今天就能做： 把你最擅长的一件事写成一篇公开的、结构清楚的文章，发在能被搜索引擎抓取的地方。\n\n这就是你在 AI 时代的「户口」。\n这个概念太有冲击力了，我由衷的觉得。\n09｜版本会更新，保持 small ego\n\n[IMG:15]\n原片截图 02:10:48｜讲张一鸣的「small ego」\n他用王者荣耀解释人生：游戏会更新版本，上个版本最强的英雄，下个版本可能直接被削弱。「地球 Online」也一样，没有一个打法能一招吃到黑。他举的例子是某个大版本更新里房地产被「砍了一半」，今天押对了 AI，也不代表明天还能躺赢。\n\n[IMG:16]\n怎么跟上版本？\n① 早更新，早超生。\n系统硬扛着不更新，越来越多东西就不再支持你。他说 2012 年第一次见到特斯拉时就认定这是革命，同一年押注了 crypto。在他看来，赚钱多只是副产品，根本原因是这件事在社会中扮演的角色越来越重要。\n② Small ego。\n字节跳动能一直赢，是因为不管多成功，都愿意听年轻人讲、愿意学新东西。他说了一个很反直觉的「诅咒」：越成功的人 ego 越大，因为成功似乎证明了「我是对的」，而这恰恰会让他错过下一个版本。\n过去的成功会让人过度相信旧模型。\n保持 small ego，本质上是持续给自己的大脑打补丁。\n10｜先自由后财富，多创造少消费\n原片定位：02:43:27\n\n[IMG:17]\n原片截图 02:43:37｜「其实还是先自由后财富」\n这是他说「比 2016 年讲得更深刻」的升级版：\n“财富自由，其实是先自由，后财富。财富是自由的伴生品。\n\n[IMG:18]\n很多人以为「有钱了才能自由」，恰恰相反：只有认知自由、行动自由，你才能灵活地进入风口，拿到与风口相匹配的财富。\n人的活动分两种：创造和消费。\n单纯的消费没有意义，定好一个大方向，多做创造性的事。\n「缺啥补啥」，上班的人不想上班，而他这个没上过班的人特别想上班，最想进 OpenAI 和 Anthropic，因为好公司能给他提供 benchmark。\n\n怎么看待这场访谈？\n公平地说，这场访谈里有不少孙宇晨式的极端表达：百分之百相信 AI、30 岁前不买房不结婚、「孙学」「搏击」「黄毛」三大理论……\n但如果剥掉表达方式，内核其实很朴素：\n用最便宜的工具，把自己变成数据；\n\n用多个 AI 对冲自己的偏见；\n\n保持机动，去全球找价值最大的地方；\n\n持续更新版本，别被过去的成功困住。\n\n这四件事，哪一件都不需要你有钱，也不需要你有人脉。",
+    "tags": [
+      "AI",
+      "学习",
+      "思考"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCpictnsvy9HP4MohNCZvxVfPgzTX9jk06u8RvXs0kbtbRTDYGOg4ud7ibeSBVEWm12lbnOnZ0cpabRAfibbrxic98b1CVoI6RTgalI/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCr0moU2940CYP7nOERskzx4TxpNdLsLnLw7MD5Mic6nQ52LdmId1awfMgxibrsAPApYw63GjZ0GLgiabkIIBhPxfU2ppfFGsFsorQ/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqUxGVBEW5XMiaCD0ThcQ2I0XNuAS40n86qn60p308QGYzP20HxxuQdpuAEQEDPOR7XiaK7yEMKp374FbnpR0DAYJanb4GrpXsXA/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCovpIfSuONNh9d7Eia0ddDUD7DpeBtcmAykRbh4iaic3ibpWCJjGqnRPhgy4LVVOVWnqj5Gtykiaa9zwwC1Fnian9ueJiaeh335Y98tfs/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCoPBlibwQCjhibMZk4Py5zqx4zmxEUPvQJznoibNgT0U55GiaBw3Q0yzSmpPQj4pia3glicoepbHeHGph9sO6U0s11b4Kyibhp1ph8o3s/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCrhotELVAibHzgwhS46iatoouiaVujJnM0sbnIhbaPzaKpKicibU7jlzyUcesQ7cfnTTo6ngkfr2bPzpAHQ2qNQwicDibShbxKVRMgbCk/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpnQNOSx0k3FH3bUf3UVwOjtEFuDeiafNic5d450KoSMY7cSG1reNt5b4icicvXObhueBrsEicmR7LS8zibiabnoDibU0Awf2OddFQDbWQ/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCr3AwliccN6KcBRibpe1XK11vDVNQUcule5SkluBVP7G8ZfGlico1fyjVLCbuWLLwiaYxWRrEQsKR7aQrzKsoQQOU6K1LiaqHy4BYz0/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpc89W5iaWI2BUjCCPpKw69dMfJttn9ZiaWgRZLG4N9zFam1bbbLJ2LlmwVqrV79FwgqKib4nAjFEHTSnyEaRWgb863NBIQiaHcxcA/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCoykGbrPAehSwHWWeIjZqmDzicDCvZjQ0ahkUOCo0wwp3tupib737ibL3LImowH0GhfkuySVW3Sib2ps15939L8IFSia116eTq0tcibU/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoAkbCb802C56b80GXIYBNy6wf1Z5UIhIz1F38IEYsEdazNTpZpXzYs8fO59e137xEHdzgAImBKtyLFPN3tNbqun5PVxAORLy4/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqyvKDMrkwDQPZ1fFZaqEe9Y0Y4zibnqsicDWJ0HGPP84kU7ZNkJz6QzoU0deSGJnaT0MQXaNeY5qXDzmMb5TQlS3pMl1eNgaSgE/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCpy8ibJPV9wny0vUoE3b63gzkicUiamhBMUD0Sch5KubHtdiayQ28hGS4tnQCFMclKyIxxSbF2IAY6zhnz1YqWclZZdTCzfyrDHCkg/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoYN8mttyNJ9expsNR5x7n07LHQMJHxq7kn4OkLwzoXpiaodyXz9wrwOpo7SBpuCXX3qysLfGCqMUAHNWaY0UMhSum8GfhyRHNo/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCqYuQiaMbE2RiaIu5Iz5CxsClXoUsgibaPl6TW94bplwTE45kCeY0GgtUprLlCLS48VzhSbJy7KgFib8NTwpYmLqP4FfLMemJauOOM/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqzvS7o9QU2y1K1lp0k9ia68Rln9wksN7XicUHicPVTUvVX8aFkuHADwp2gSGcVb4XdibKElToeib9uFFfeIPfV3EK9WlZxsAu6BJIo/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqnG5C8Fr9bptZb5lgAor486ibKcrkoUBdBcl5ncNGMurnd0GrThAkKcibABxthOO7CItDiaPvoN0tSXkme9SnfSD2YOh3Ce0gwFQ/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCoerEibonoSX8P7cr59UPYLgZRE47WJ20f9sMTC7jTYXArrTnzic3xDul9IsW8eutJ1gs0v4H4Y9Ih4fW8Vt4Jpj8VOaWZqhGRf8/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpAGE8XkDz4qFpiblmbZn8tiblOIvHxwnXNbysow3PBpZSGNoNViaCvpt0PxdHGrMn0Y6z5huIqO7WJ7buN1EqTb6cSLgRcHYJtpI/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqgn5uy1oM3yk8pM98Rqnakw3BXF5ltYXk4wviaDKu6wDAiaicOrEeMYnI9JctS6AUsEfYIe97DW5RXDdEm1x0BDKxJ8Deuib73OSg/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-10",
+    "slug": "day-187"
+  },
+  {
+    "day": 186,
+    "title": "忙碌、焦虑、专注和目标",
+    "summary": "国庆一眨眼就过去了。这个国庆我没有出去玩，基本上就是工作、看书、健身循环。",
+    "content": "国庆一眨眼就过去了。\n这个国庆我没有出去玩，基本上就是工作、看书、健身循环。\n去年国庆我去西北玩了10天，现在想来，让我什么也不做地玩上十天，应该是做不到了，可能两三天对我来说都很困难，我会觉得我在浪费时间，浪费生命，我本应该去工作的。\n但不得不说，最近真的太忙了。\n最近主业由于岗位的调整，变得非常忙，副业也处于一个完全拉满的状态。\n副业拉满的原因是，我想在离职前尽可能让自己强大起来，挣到更多的钱、积累更多的粉丝、接触更多的人，让自己在真正离开时能够更加从容。\n所以我几乎拼尽了全力，每天保持12小时以上的工作时间。\n近几个月，我几乎没有什么娱乐活动。以前我会打麻将、打游戏，也会出去和朋友打德州、参加应酬，现在几乎全都砍掉了。\n我把所有时间都奉献给了AI、自媒体和健身。\n说实话，我的自媒体做得好很差，原因有很多，一时半会儿也讲不完。但市场和数据一直在给我反馈，不断修正我的错误行为。渐渐地，我也找到了一点营销学和传播学的感觉。\n我有盲目的信心，未来我会越来越好。\n很多人问我：“鑫哥，你有没有焦虑？”\n坦白来讲，我的焦虑其实很大。生活的压力、感情的压力、家庭的压力，各个方面的压力都有。\n我也曾经崩溃过，有时候只是因为停不下来，实在太疲惫了。但在反复的拉扯中，我能感觉到自己的抗压能力正在不断提高。现在即使很多事情同时压过来，我也能尽量保持情绪稳定，继续工作。\n唯一想和大家分享的是，在这几个月里，我的身体反而变好了。\n前段时间我去协和体检，身体的各项指标都比去年更好。\n我想，主要是因为我开始更加严肃地对待睡眠、饮食和运动这三件事。\n这半年里，我基本稳定在晚上11点多睡觉。\n我的老读者都知道，以前我写一人公司纪实，经常要到凌晨一两点才发，然后三点睡觉。现在来得及发就发，来不及发就早点睡。\n倒不是我想偷懒，纯粹是因为我发现，早睡能够带来第二天更好的工作状态、精神面貌和精力。\n熬夜工作本质上是一种透支，我甚至觉得，它有时候也是一种逃避和借口。\n当你熬夜工作以后，或许第二天就有了借口，不再好好工作、不再好好吃饭，也不再好好健身。\n饮食方面，我现在几乎不再摄入多余的糖分。\n以前喜欢喝奶茶，现在也开始克制，已经喝得很少了。主食基本换成了粗粮，如果点外卖，我也会尽量选择轻食。\n平时在家吃饭，我会先吃蔬菜，再吃蛋白质，最后吃米饭，这样可以让血糖更加稳定。\n健身方面，我丝毫不吹牛地说，我的薄肌身材肯定比邵艾伦要好。我的体脂是12.8%，肌肉量也比他大。\n我现在一周六练，有氧和无氧全部拉满。\n所以这篇文章写什么呢？\n我也不知道，只是想告诉大家一下我近期的状态，毕竟我们这个栏目还是个记录型的栏目嘛。\n但我现在还是有个目标的，到12月31日之前，我给自己定下了一个明确的目标：全网粉丝达到10万。\n现在是2万，距离目标还很远，但这就是我现阶段最想完成的一件事。\n我会拼了命地去执行，一点点把这个目标做出来。",
+    "tags": [
+      "思考",
+      "目标",
+      "健康"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCo92BUD2Ighmb0gft5t5XoR9ncq2eMonysy29Oib8VZR6wIeIibCiaddhbqBR2mNKPiaHqXEPN3r0srUejMDZWbL9PjqjNFLXFguas/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-10-09",
+    "slug": "day-186"
+  },
+  {
+    "day": 185,
+    "title": "AI时代，没有什么比搞好身体更重要",
+    "summary": "最近可以说身体达到了巅峰，协和体检基本上没问题，体脂是 12.8%。",
+    "content": "最近可以说身体达到了巅峰，协和体检基本上没问题，体脂是12.8%\n\n我意识到，在铺天盖地的AI焦虑洪流之下，没有什么比搞好身体更重要了。\n\n薄肌也好，大水也罢。\n\nAI永远是工具，以人为本才是真正的核心。\n\n技术会不断发展，AI也会不断发展，现在任何一个普通人能享受到的现代互联网红利可能比以前的皇帝还要丰富。\n\n活下去，健康的活下去，充分享受现代社会的便利与美好。\n\n干净的水、健康的食物、随时可看的电影、随时可听的音乐、随时可连线的朋友，还有随时能利用AI学知识。\n\n这些，才是真正属于我们的“时代红利”。\n\n身体垮了，再先进的AI也救不了你；心态崩了，再多的信息也只是噪音。\n\n所以我想劝劝大家对自己好一点，把自己养好：睡够觉、吃好饭、动一动、晒晒太阳。\n\n睡饱之后，然后再去用AI当助手——让它帮你写、帮你查、帮你算，你则腾出时间去感受真实的风、真实的人、真实的生活。\n\n技术再怎么变，人始终是目的本身。\n\n把身体养扎实了，把日子过踏实了，剩下的，交给时间和技术去奔跑就好。",
+    "tags": [
+      "健康",
+      "AI",
+      "思考"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCrk3K9wiaVAhibzD5fZNIdgxS153UGj2guwchtglQ9RTvy72xFlGn5B4h1o8aRXrHezD1w8XS6vqDKqbqgKtrfqD8eGBfQ3xicvH8/0?wx_fmt=jpeg",
+    "images": [],
+    "publishedAt": "2026-10-08",
+    "slug": "day-185"
+  },
+  {
+    "day": 184,
+    "title": "难得在小红书拿到一次结果",
+    "summary": "小红书是一个很奇特的平台，但又是一个非常重要的平台。",
+    "content": "小红书是一个很奇特的平台，但是又是一个非常重要的平台，具体我认为有以下几个重要特质：\n一、女性群体多，知识付费欲望强\n二、学习、知识、个人成长类内容能获得较高的流量\n三、封面大于一切\n基于这三点，我认为这个平台无论如何都是要闯一下的，起码是有很强的变现空间，但是我一直都做不起来。\n抖音、视频号、b站，这三个平台我做十几万的流量很轻松，感觉流量的分发是很正常的。\n只有小红书这个平台，都是几十上百的阅读量，流量分发机制非常奇怪。\n但是我也没有气馁，慢慢去做吧。\n昨天拍的一个视频，总算拿到了小红书的一点点结果，到现在刚好24个小时，小红书5W播放量，抖音和视频号大概也有15W播放量吧，我总结下了原因：\n1、题材符合个人成长和学习\n2、AI话题有热度\n3、封面设计还可以\n\n[IMG:0]\n\n继续加油！大家也继续加油！\n持之以恒，日拱一卒。",
+    "tags": [
+      "自媒体",
+      "小红书",
+      "复盘"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCpoGfC9MWjCYRfcTkVqG1LAWaianuZQrdZuqaEjuPJbaz0tfLGMWlZ3sicV7mQ46mNZocDSibfW8RwJ9IicmFOq4NCHFHnibicjVaHDE/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZComzskBW5mogqEsYLR4qiasfen96gicUkRSezHGdOYY1mqEqlUcWpQIIiapiaMyYRtgF1cv0SzuVoEqflZReszNCibP2Oia9tXuxicWkg/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-05",
+    "slug": "day-184"
+  },
+  {
     "day": 183,
     "title": "纯粹的执行，无视情绪",
     "summary": "继续推进动画库、Skill 导航站、墨芽和人生指南，并重新整理 GitHub 个人主页，保持多平台视频更新。",
