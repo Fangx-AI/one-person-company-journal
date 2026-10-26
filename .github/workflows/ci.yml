@@ -24,6 +24,9 @@ jobs:
       - name: Validate content
         run: npm run validate:content
 
+      - name: Check GitHub article layout
+        run: npm run test:github-docs
+
       - name: Lint
         run: npm run lint
 

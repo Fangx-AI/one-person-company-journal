@@ -2,6 +2,7 @@ import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { buildBodyBlocks, renderBodyBlocks } from './journal-markdown-format.mjs'
 
 const rootDir = process.cwd()
 const entriesPath = path.join(rootDir, 'public', 'data', 'journal-entries.json')
@@ -133,19 +134,48 @@ export function readmeTitle(entry) {
   return `${prefix} ${title}`
 }
 
-export function buildArticleMarkdown(entry) {
-  let content = entry.content.trim()
+export function sortJournalEntries(entries) {
+  const rank = (entry) => String(entry.day).startsWith('W') ? Number(String(entry.day).slice(1)) * 7 : Number(entry.day)
+  return [...entries].sort((a, b) => rank(b) - rank(a))
+}
+
+export function buildArticleMarkdown(entry, entries = [entry]) {
+  const blocks = buildBodyBlocks(entry)
+  const sections = blocks.filter((block) => block.kind === 'heading' && block.level === 2)
+  const showContents = entry.content.length >= 1800 && sections.length >= 4
+  let content = renderBodyBlocks(blocks, { anchors: showContents })
   for (const [index, imageUrl] of (entry.images || []).entries()) {
     const imageMarkdown = `![${entry.title} 图 ${index + 1}](${localImagePath(entry, index, imageUrl)})`
-    content = content.replace(`[IMG:${index}]`, imageMarkdown)
+    content = content.replaceAll(`[IMG:${index}]`, imageMarkdown)
   }
-
+  const ordered = sortJournalEntries(entries)
+  const position = ordered.findIndex((item) => item.slug === entry.slug)
+  const older = ordered[position + 1]
+  const newer = ordered[position - 1]
+  const issue = String(entry.day).startsWith('W') ? `周报 No.${String(entry.day).slice(1)}` : `Day ${entry.day}`
+  const metadata = [issue, entry.publishedAt, entry.sourceUrl ? `[公众号原文](${entry.sourceUrl})` : null].filter(Boolean).join(' · ')
+  const contents = showContents ? [
+    '<details>', '<summary>本文目录</summary>', '',
+    ...sections.map((section, i) => `- [${section.lines[0]}](#section-${i + 1})`),
+    '', '</details>', '',
+  ] : []
   return [
     `# ${displayTitle(entry)}`,
     '',
-    entry.summary ? `> ${entry.summary}` : '',
-    entry.summary ? '' : null,
+    metadata,
+    '',
+    '[全部文章](../../README.md#全部文章)',
+    '',
+    ...contents,
     content,
+    '',
+    '---',
+    '',
+    older ? `上一篇：[${readmeTitle(older)}](${older.slug}.md)` : null,
+    older ? '' : null,
+    newer ? `下一篇：[${readmeTitle(newer)}](${newer.slug}.md)` : null,
+    newer ? '' : null,
+    '[返回目录](../../README.md#全部文章)',
     '',
   ]
     .filter((line) => line !== null)
@@ -153,7 +183,21 @@ export function buildArticleMarkdown(entry) {
 }
 
 export function buildReadme(entries) {
-  const links = entries.map((entry) => `- [${readmeTitle(entry)}](docs/2026/${entry.slug}.md)`).join('\n')
+  const ordered = sortJournalEntries(entries)
+  const link = (entry) => `[${readmeTitle(entry)}](docs/2026/${entry.slug}.md)`
+  const latest = ordered.slice(0, 5).map((entry) => `- ${link(entry)}${entry.publishedAt ? ` · ${entry.publishedAt}` : ''}`).join('\n')
+  const groups = new Map()
+  for (const entry of ordered) {
+    const week = String(entry.day).startsWith('W')
+    const start = Math.floor((Number(entry.day) - 1) / 50) * 50 + 1
+    const label = week ? '周报' : `第 ${start}—${start + 49} 期`
+    if (!groups.has(label)) groups.set(label, [])
+    groups.get(label).push(entry)
+  }
+  const archive = [...groups].map(([label, items]) => [
+    '<details>', `<summary>${label} · ${items.length} 篇</summary>`, '',
+    ...items.map((entry) => `- ${link(entry)}`), '', '</details>',
+  ].join('\n')).join('\n\n')
 
   return `# 一人公司纪实
 
@@ -163,9 +207,17 @@ export function buildReadme(entries) {
 
 这里不写成功学，只记录产品、内容、流量、销售、收入、踩坑与复盘。
 
-## 2026
+**[最近更新](#最近更新) · [全部文章](#全部文章) · [关于作者](#关于作者)**
 
-${links}
+## 最近更新
+
+${latest}
+
+## 全部文章
+
+共 ${entries.length} 篇记录，按期号归档；周报单独列出。展开后点击标题即可阅读。
+
+${archive}
 
 ## 关于作者
 
@@ -181,6 +233,10 @@ ${links}
 | 📚 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
 
 > 先做一个真实能跑起来的版本，再一点点把它变好。
+
+---
+
+[贡献与纠错](CONTRIBUTING.md) · [内容更新说明](docs/github-reading-layout.md)
 `
 }
 
@@ -210,7 +266,7 @@ async function generate() {
   await mkdir(assetsDir, { recursive: true })
 
   for (const entry of entries) {
-    await writeFile(path.join(docsDir, `${entry.slug}.md`), buildArticleMarkdown(entry), 'utf8')
+    await writeFile(path.join(docsDir, `${entry.slug}.md`), buildArticleMarkdown(entry, entries), 'utf8')
 
     if (entry.images?.length) {
       await mkdir(path.join(assetsDir, entry.slug), { recursive: true })
@@ -233,7 +289,7 @@ async function generate() {
   console.log(`Generated ${entries.length} GitHub markdown articles.`)
 }
 
-if (fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
   generate().catch((error) => {
     console.error(error)
     process.exit(1)

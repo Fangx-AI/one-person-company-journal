@@ -6,7 +6,22 @@
 
 这里不写成功学，只记录产品、内容、流量、销售、收入、踩坑与复盘。
 
-## 2026
+**[最近更新](#最近更新) · [全部文章](#全部文章) · [关于作者](#关于作者)**
+
+## 最近更新
+
+- [No.197 三个 AI Agent 一起开发，终于有了“总指挥”](docs/2026/day-197.md) · 2026-10-26
+- [No.196 2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）](docs/2026/day-196.md) · 2026-10-24
+- [No.195 GEO确定是有效果的](docs/2026/day-195.md) · 2026-10-23
+- [No.194 Deepseek再使用](docs/2026/day-194.md) · 2026-10-22
+- [No.193 本周汇总任务](docs/2026/day-193.md) · 2026-10-20
+
+## 全部文章
+
+共 159 篇记录，按期号归档；周报单独列出。展开后点击标题即可阅读。
+
+<details>
+<summary>第 151—200 期 · 47 篇</summary>
 
 - [No.197 三个 AI Agent 一起开发，终于有了“总指挥”](docs/2026/day-197.md)
 - [No.196 2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）](docs/2026/day-196.md)
@@ -55,6 +70,12 @@
 - [No.153 如何获取高质量AI信息](docs/2026/day-153.md)
 - [No.152 自媒体多平台分发很重要](docs/2026/day-152.md)
 - [No.151 如何大幅度降低Token消耗量](docs/2026/day-151.md)
+
+</details>
+
+<details>
+<summary>第 101—150 期 · 45 篇</summary>
+
 - [No.150 如何超过90%的创作者](docs/2026/day-150.md)
 - [No.149 保持好状态](docs/2026/day-149.md)
 - [No.148 对标爆款视频](docs/2026/day-148.md)
@@ -100,6 +121,12 @@
 - [No.103 微信读书 Skill，AI 中转站 100 问与系统学习](docs/2026/day-103.md)
 - [No.102 飞书 CLI，一人公司系统化与 AI 平权](docs/2026/day-102.md)
 - [No.101 Codex 手机端，HyperFrames 视频与 AI 剪辑](docs/2026/day-101.md)
+
+</details>
+
+<details>
+<summary>第 51—100 期 · 20 篇</summary>
+
 - [No.100 一人公司纪实继续更新，Claude 限额与 Codex 思考](docs/2026/day-100.md)
 - [No.99 黄仁勋演讲，AI 革命与一人公司的机会](docs/2026/day-99.md)
 - [No.98 Karpathy 四步法则，AI 编程与真实记录](docs/2026/day-98.md)
@@ -120,6 +147,21 @@
 - [Day 75 忽略情绪，持续做事](docs/2026/day-75.md)
 - [Day 73 但行好事，莫问前程](docs/2026/day-73.md)
 - [Day 72 拍视频、写文章、个人网站上线](docs/2026/day-72.md)
+
+</details>
+
+<details>
+<summary>周报 · 3 篇</summary>
+
+- [周报 No.10 竭尽所能去提升自己的价值感](docs/2026/week-10.md)
+- [周报 No.9 极端的厌恶带来极端的成长](docs/2026/week-9.md)
+- [周报 No.8 改用周报形式更新](docs/2026/week-8.md)
+
+</details>
+
+<details>
+<summary>第 1—50 期 · 44 篇</summary>
+
 - [Day 48 五条口播全平台上线](docs/2026/day-48.md)
 - [Day 47 五条口播全网发布](docs/2026/day-47.md)
 - [Day 46 个人网站迁移阿里云](docs/2026/day-46.md)
@@ -164,9 +206,8 @@
 - [Day 3 DeskFlow 优化收尾](docs/2026/day-3.md)
 - [Day 2 DeskFlow v1.0.3 发布](docs/2026/day-2.md)
 - [Day 1 桌面代办清单 DeskFlow](docs/2026/day-1.md)
-- [周报 No.10 竭尽所能去提升自己的价值感](docs/2026/week-10.md)
-- [周报 No.9 极端的厌恶带来极端的成长](docs/2026/week-9.md)
-- [周报 No.8 改用周报形式更新](docs/2026/week-8.md)
+
+</details>
 
 ## 关于作者
 
@@ -182,3 +223,7 @@
 | 📚 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
 
 > 先做一个真实能跑起来的版本，再一点点把它变好。
+
+---
+
+[贡献与纠错](CONTRIBUTING.md) · [内容更新说明](docs/github-reading-layout.md)
