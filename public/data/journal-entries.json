@@ -1,5 +1,96 @@
 [
   {
+    "day": 197,
+    "title": "三个 AI Agent 一起开发，终于有了“总指挥”",
+    "summary": "最近，我基本上在用三个 AI 编程工具协作开发：",
+    "content": "最近，我基本上在用三个 AI 编程工具协作开发：\n\nDeepSeek DSH\n\nClaude Code\n\nCodex\n\n这三个工具目前都在参与开发我的 GEO 分发系统。\n\n每个平台都有自己擅长的地方。有的适合梳理架构，有的适合快速实现，有的适合检查代码和处理复杂任务。\n\n但只要同时使用多个 Agent，就不可避免地会遇到一个问题：\n\n三方很容易“打架”。\n\n因为它们不在同一个平台里，彼此不知道对方做了什么，也没有一个统一的总指挥。\n\n有时候一个 Agent 刚修改完代码，另一个 Agent 又按照旧版本重新改了一遍；有时候三边同时开发同一个功能，最后不仅重复劳动，还可能互相覆盖代码。\n\n如果完全依靠我手动拆分任务、同步进度和整合结果，又会变得特别麻烦。\n\n这不但没有提高开发效率，反而让我自己成了三个平台之间来回传话的人。\n\n所以今天我专门在网上找了一圈资料，想看看有没有办法设置一个“总指挥”，让我可以在同一个平台里调用不同的 Agent，共同完成开发任务。\n\n还真让我找到了。\n\n这个项目叫 Codeg。\n\nCodeg 是什么？\n\nCodeg 是一个多 Agent 编程工作台。\n\n[IMG:0]\n\n它自己并不提供新的大模型，而是把 Claude Code、Codex、DeepSeek Harness、Gemini、OpenCode 等不同的编程 Agent，接入到同一个工作空间里。\n\n你可以在一个界面中：\n\n查看和管理不同 Agent 的对话\n\n让主 Agent 把任务分配给其他 Agent\n\n统一查看文件、代码差异、Git 状态和终端\n\n搜索和继续不同 Agent 保存的历史会话\n\n让多个 Agent 分别处理不同的开发任务\n\n查看每个子任务的执行过程和结果\n\nCodeg 通过 ACP，也就是 Agent Client Protocol，与不同的编程 Agent 通信。\n\n对我来说，它最有价值的地方并不是“同时打开三个聊天框”，而是可以设置一个主 Agent，让它负责拆分任务、安排分工和汇总结果。\n\n这样，多个 Agent 才真正从“三个人各干各的”，变成了一个有组织的开发团队。\n\n项目地址：\n\nGitHub：nobug-project/codeg\n\nCodeg 官方文档\n\n我准备怎么使用？\n\n我的计划是让 Codex、Claude Code 和 DeepSeek DSH 共同开发 GEO 分发系统。\n\n当前对话框作为总指挥。\n\n[IMG:1]\n\n我只需要在这里提出需求，由总指挥理解任务、拆解任务，再根据不同 Agent 的特点进行分配。\n\n比如：\n\nCodex：负责任务拆解、协调、代码审查、最终验收和结果汇总\n\nClaude Code：负责架构分析、复杂逻辑和需要较多上下文理解的任务\n\nDeepSeek DSH：负责明确、可拆分的开发任务，以及高频执行和批量处理\n\n为了防止多个 Agent 互相覆盖，我还会提前设置好协作规则：\n\n每个 Agent 只负责自己被分配的模块\n\n不允许未经确认修改其他 Agent 正在处理的文件\n\n并行任务尽量放进独立的 Git Worktree\n\n开始开发前，先确认当前代码版本和任务边界\n\n完成任务后，必须汇报修改文件、测试结果和遗留问题\n\n已经完成和发布的功能，不再重复开发或重复发布\n\n最终代码统一交给总指挥检查、测试和合并\n\n我给总指挥的提示词\n\n直接把下面这段话交给 Codex\n\n我准备让 Codex、Claude Code 和 DeepSeek DSH 协同开发这个项目。\n\n当前对话框作为整个项目的总指挥。\n\n请先读取项目结构、现有代码、Git 状态和开发文档，再为三个 Agent 设置清晰的职责范围和协作规则。\n\n每次收到我的任务后，先进行任务拆解，再根据不同 Agent 的能力分配工作。\n\n多个 Agent 不得同时修改同一个文件，不得互相覆盖代码。适合并行的任务使用独立 Git Worktree，存在依赖关系的任务按照顺序执行。\n\n已经完成、合并或发布的功能，不要重复开发、重复修改或重复发布。\n\n每个 Agent 完成任务后，必须汇报修改内容、涉及文件、测试结果、风险和下一步建议。\n\n由当前对话框统一检查各个 Agent 的结果，处理冲突，运行最终测试，并向我汇报整体进度和下一步安排。\n\n未经确认，不要修改任务范围之外的代码，也不要删除其他 Agent 或用户已有的修改。\n\n多 Agent 不等于自动变强\n\n我现在越来越明显地感觉到，多 Agent 协作真正困难的地方，不是接入多少个模型，而是如何分工。\n\n如果没有清晰的任务边界，三个能力很强的 Agent 同时工作，也可能只是把混乱放大三倍。\n\n总指挥真正需要解决的是四件事：\n\n谁负责什么\n\n哪些任务可以并行\n\n哪些文件不能同时修改\n\n最终由谁检查和合并\n\n这和现实中的团队管理其实非常相似。\n\n模型能力再强，如果没有任务拆解、职责边界、版本管理和验收标准，最后依然会变成一群能力很强、但彼此不知道对方在做什么的人。\n\n下一步\n\n接下来，我会先在 GEO 分发系统中测试这套协作方式。\n\n我的目标不是为了多用几个 AI 工具，而是建立一套真正稳定的多 Agent 开发流程：\n\n需求由我提出\n\n总指挥负责拆解\n\n不同 Agent 分工执行\n\n任务过程可以查看\n\n代码修改彼此隔离\n\n最终结果统一检查和合并\n\n如果这套流程能够真正跑通，那么以后开发大型项目时，我就不需要在三个平台之间反复传话了。\n\n我只需要管理一个总指挥。\n\n剩下的任务拆解、分配、执行、检查和汇报，都可以在同一个工作空间里完成。\n\n这才是我理解的多 Agent 协作：\n\n不是同时打开三个 AI，而是真正组建一支能够分工、协作和交付结果的 AI 开发团队。",
+    "tags": [
+      "AI",
+      "工具",
+      "开发"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCrQoBYDhTQHtxAUe0pXjmqApfh5qPDiaXw6xgdJRmj0hGuGS352Yf9AZJpREJCE3oJ8dSzRribTNibtAoB6R1P8HCccKFTPj4yScQ/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCpxGawuuIgca5Bq3R0adbNqhbHE3eNezsXlIxR6KeBgNZWKfwtARhbM53ficRTNp4ZtJ9yCf1d8keWHwKW8zpm3QcLykIT2LFyI/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCpoQaohhNxsMXSUN0r4oiaXxDNCYgkPoexgsVPZ9Zib7XvyTia1EY4ECchrXOa5hwMI3Wwv1alwBPtRdiaFaZeVpEst54zmdYqh3tU/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-26",
+    "slug": "day-197",
+    "sourceUrl": "https://mp.weixin.qq.com/s/7v7Ca6FS2PFDwFpcsTUDzg"
+  },
+  {
+    "day": 196,
+    "title": "2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）",
+    "summary": "最近手头在准备三件事：",
+    "content": "最近手头在准备三件事：\n\n打磨 GEO 白皮书\n\n继续优化 GEO 分发项目\n\n准备 GEO 系列课程\n\n一、打磨 GEO 白皮书\n\n最近手头在准备的第一件事，是继续打磨 GEO全球行业白皮书\n\n先交代一下背景。\n\n这本白皮书的全名是：\n\n2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）\n\n[IMG:0]\n\n它覆盖的是“全球 + 最新”：\n\n海外 AI 搜索入口：ChatGPT 周活约 12 亿、Google AI Overviews 月活超过 25 亿\n\n中国独立市场：豆包月活达到 4.19 亿\n\n产业链与市场规模\n\n海外厂商拆解\n\n中国服务商格局\n\n九种商业模式\n\n定价与毛利\n\n交付 SOP\n\n效果衡量方法\n\n合规红线\n\n2027—2028 年趋势判断\n\n整本白皮书包含 13 章正文，以及术语表、大事记、来源索引、价格总表、RFP 模板等附录。\n\n为什么要做这本白皮书？\n\n因为 GEO 在 2026 年已经是一门真实的生意，但行业里的信息太碎、口径太乱。\n\n同一个市场规模，不同券商给出的数字能相差三十倍。\n\n“AI 排名”这种说法满天飞，但实际上，同一个问题连续询问两次，出现相同品牌列表的概率可能不到 1%。\n\n服务商层面，3·15 曝光投毒、清朗专项处置 1.4 万余款 AI 产品、多渠道分发规定落地，合规已经变成一条生死线。\n\n这个行业缺的不是观点，而是一份能够把口径讲清楚、把数字标出来源的底稿。\n\n“打磨”主要在做什么？\n\n所以，我说的“打磨”不是简单修改错别字，而是主要在做四件事。\n\n1. 数字核验\n\n每一个关键数字都标注来源和时间口径。\n\n厂商自述的数据和我的估算分开标注，具体方法写在附录 B。\n\n2. 调整结构\n\n每章开头先给结论，结尾再给判断。\n\n即使只读每章的开头和结尾，也能抓住整本白皮书的主线；想继续深挖，再进入正文。\n\n3. 补充覆盖\n\n以 2026 年 10 月为基准，把“海外两强 + 中国独立市场”放进同一张表中进行对照，区域市场则单独展开。\n\n4. 建立更新机制\n\n大事记、来源索引和观察清单，全部做成可以持续更新的结构。\n\n行业发生变化后，可以直接往里面补充，而不是每次都重新写一遍。\n\n这本白皮书适合谁？\n\n这本白皮书主要对三类人有用：\n\n品牌方：先把事实库做准、做一致，不要轻易为“保证排第一”付费\n\n服务商和想入行的人：把合规能力变成自己的卖点\n\n投资人：重点关注监测层整合和 AI 交易层\n\n[IMG:1]\n\nGEO 全球行业白皮书\n\n二、继续优化 GEO 分发项目\n\n第二件事，是继续优化 GEO 分发项目。\n\n目前主要在加强两个方面：\n\n平台分发的稳定性\n\n数据观测的可靠性\n\n接下来还会继续优化整个分发流程，减少平台差异和系统波动带来的影响，让分发结果更加稳定，数据反馈也更加可信。\n\n[IMG:2]\n\nGEO 分发项目\n\n三、准备 GEO 系列课程\n\n第三件事，是备课 GEO。\n\n基于这本白皮书，我准备制作一套 GEO 系列课程。\n\n整套课程大约 24 集，每集 6—8 分钟，主要分为六个部分。\n\n1. 认知篇（4 集）\n\n主要讲：\n\nGEO 是什么\n\nAI 如何挑选信源\n\n2026 年国内外有哪些主要入口\n\n对应白皮书第 1—2 章。\n\n2. 格局篇（3 集）\n\n主要讲：\n\n海外 GEO 是一门什么生意\n\n国内 GEO 是一门什么生意\n\n行业里的钱流向了哪里\n\n对应白皮书第 3—5 章和附录 Q。\n\n3. 实操篇（6 集）\n\n主要讲：\n\n如何建立问题集\n\n如何建立事实库\n\nGEO 官网模板\n\n信源布局\n\n不同平台的分发规则\n\n对应白皮书第 9 章和附录 M、V。\n\n4. 衡量篇（3 集）\n\n主要讲：\n\n为什么“AI 排名”是一个伪概念\n\nGEO 效果应该如何采样\n\nGEO 月报应该怎么写\n\n对应白皮书第 10 章和附录 U。\n\n5. 合规篇（3 集）\n\n主要讲：\n\n3·15 曝光事件\n\n两起 GEO 相关罚款案例\n\nAI 内容标识办法\n\n强监管行业的注意事项\n\n对应白皮书第 11 章。\n\n6. 赚钱篇（5 集）\n\n主要讲：\n\nGEO 的商业模式\n\nGEO 服务如何报价\n\n合同应该怎么写\n\n如何获客与续费\n\n普通人如何用 90 天进入这个行业\n\n对应白皮书第 6—8 章、第 12 章和附录 W。\n\n写在最后\n\n这三件事其实是一件事。\n\n白皮书负责把行业研究清楚，分发项目负责把方法真正跑通，课程负责把复杂的知识整理成普通人能够理解和使用的内容。\n\n接下来一段时间，我会继续围绕 GEO 深耕。\n\n一边研究，一边实践，一边把整个过程记录下来。",
+    "tags": [
+      "AI"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCq7EiclMibqQwOp7Mxmsgycv0QOLYQMP5VYg61BanjEDcRrEkmxfX3pknBMh5f5pe76B4fnC6ZNHTQZbOFkKq9P9xUj5qhia4JFlM/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCpOpvm7ouTMQUBJoIdKXz4GfAvXN6nyrLtZea8zAEncuOpMH5bjnPGSudUHIiaZp4lL30HWZNNee9gTL1ibIUFCVqBMib1qc9jicVM/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCrAKicOD0oP6TqM6s6ZgIrtFTP1vs51YRxXTyklMTlUYdXq5XUs9dX8YQf0LNT2pIU5DsPAm4PTSiaOlwJs2LWKAdq9hyvt7Uic0c/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZColqicWyRpCxVibVdRQqXYe3Q3fuv4oicfobjLayAb0Jz1JNbRiajp8Tcb8L9picXJBjmAgLk1y7CTMl1ib3ePnO0GOYaLplzjUl4nMQ/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-24",
+    "slug": "day-196",
+    "sourceUrl": "https://mp.weixin.qq.com/s/jT24OP1PplTmVRdCUiVAJw"
+  },
+  {
+    "day": 195,
+    "title": "GEO确定是有效果的",
+    "summary": "在做GEO之前，我会想怎么验证GEO是有效果的。",
+    "content": "在做GEO之前，我会想怎么验证GEO是有效果的。\n\n做了之后我发现这个问题太简单了。\n\n对于绝大数的中小企业而言，互联网上根本就搜不到他们的企业。\n\n就算能搜到他们的企业，也搜不到他们的产品。\n\n就算能搜到他们的产品，也搜不到他们产品的具体信息。\n\n就算能搜到他们产品的具体信息，也不知道他们产品的具体价格是多少，零售价是多少，批发价是多少等等。\n\n所以对于大多数企业来说，根本就不是1-100的问题，而是从0-1的问题。\n\n既然是从0-1的问题，那么有没有效果，你搜不搜的到就已经可以证明了。\n\n昨天你搜不到，我们昨天GEO服务后，你搜到了，这就证明我们的服务是有效果的。\n\n[IMG:0]\n\n参考今天的小程序推广，这个我们收的是1000块一个月。\n\n之前豆包是搜不到他的小程序的，现在能搜到了，也就证明我们的价值了。\n\n[IMG:1]\n\n目前我们可以分发这些平台，除此之外，还可以定制化一些平台。",
+    "tags": [
+      "日志"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCp7mIicq34HQYozsTmHgbnnYo4vebg3TgJaWZMFLpuvn028KYNF7iaFm2ZVtwF5E7IbqJOC6iaTxdwDOpg07NCcHac4vnkPrsT81k/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqwe3JSwl0MPF7qf2ib97ULIOnWcTZia3E1RoKlSGmicFMzD8Z1eMCYzMXIAaAyk2KuGXP2vKdqqrWUn9nqMv5pKSiaYFIkmYRdl9Y/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCrMZ0fE6iask3LNmmf85kxCuToo7pVCK44MdIicAJT2VTTlbaRQpzLgfCg8ntzYAzW0rMZuicYonNOgVQZjmibjGIUhwmwpmIeVH4U/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-23",
+    "slug": "day-195",
+    "sourceUrl": "https://mp.weixin.qq.com/s/0GarhdH6D6xEv1fbpWLMvw"
+  },
+  {
+    "day": 194,
+    "title": "Deepseek再使用",
+    "summary": "前两天经群友推荐，说Deepseek很猛，重新下回来了。",
+    "content": "前两天经群友推荐，说Deepseek很猛，重新下回来了。\n\n[IMG:0]\n\n这两天跑了差不多2亿的Token吧，花了13块钱，价格还真是不贵。\n\n然后比较惊喜的是DeepSeek现在给我的干活体验远胜于Codex。\n\n我让Codex重新审视我的Image2网站进行迭代重构。\n\n[IMG:1]\n\n每个智能体在干什么一清二楚。\n\n强烈推荐大家去使用一下Deepseek-v4 + DSH，还可以安装很多的社区插件，简直不要太棒。\n\n我说实话，我第一次对国产的大模型感觉到了兴奋！！\n\n此外，这两天的GEO也有了很大的进展，现在目前我们的GEO项目可以做到一键分发平台了（简书，CSDN，知乎，b站等等……）\n\n[IMG:2]\n\n加油！！",
+    "tags": [
+      "日志"
+    ],
+    "cover": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Zia5tWSYZCqDibCpiau1KOffkTgufY43hiaJHOCCF2icgzsbvHzRtkMVP6gz0ic4RFgibGUsAoqS65QiaBX2jB2sCtz6icl6yOl70eAXnV05KPibSKibU/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCoUlibyaU12LxJ7EKq3towfuGTBZia84U96BTDO0VIjic9jgDNAH8nWj2fG52wb9xteH0ZB8eaj2BLPEBkY5OmCQJzZey4oibiajIfI/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCo0wCkOKDXdiblk9ClLs6KLcS0sKoxndxWgbY1IY4Jw9oJ9lqEM50VibianuxJuSpGOBh8Y1ZDHtn9qCr7dpiav4qMusrj8VFWqJYc/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/mmbiz_png/2Zia5tWSYZCoQYYspQ5mW4FjCNvhgKcroXU55ibZ1QrJ018JdzRwQfNKjQ2N1XL0dW0JYCshzXJs45FSuibpAezWUG8MiafWtUD6kZwjGZOakibI/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-22",
+    "slug": "day-194",
+    "sourceUrl": "https://mp.weixin.qq.com/s/J-okFd9gAuicTj8_z7greQ"
+  },
+  {
+    "day": 193,
+    "title": "本周汇总任务",
+    "summary": "这几天要给腿做个手术，难得的清静时间可以在医院住一个星期，静下心来去研究下AI、GEO和自媒体。",
+    "content": "这几天要给腿做个手术，难得的清静时间可以在医院住一个星期，静下心来去研究下AI、GEO和自媒体。\n\n初步规划下这个星期的工作、后面也可能会调整\n\n1、Claude防封教程\n\n本来昨天想发布梳理总结一下自己的Claude防封文案，直接平台警告了，不能直接发布这类内容，无奈。\n\n当然其实方法有千千万，也不复杂，大家只需要在Github或者X上搜索一下Claude防封就行。\n\n[IMG:0]\n\n里面有非常多前人的经验和教程，只要想办法总能解决的。\n\n我还是推荐大家尽早用上Opus5.5，就目前使用体感来说，全球独一档。\n\n2、开源GEO学习地图\n\n[IMG:1]\n\n这是一个我自己开发的项目，Codex差不多跑了20亿左右的token吧，但是我自己其实还是很不满意，所以我准备让Opus再去优化一下，然后发布到Github项目。\n\n方便自己学习GEO的同时，也可以让大家更了解GEO，学习GEO，一起相互交流。\n\n3、将Image2网站用Opus跑一遍流程。\n\n最近越来越不信任Codex了，我准备让Claude自己去扫描整个服务器，看看项目有没有可以优化和修复的地方\n\n4、深入探索GEO领域\n\n①观察市面上已经有的开源GEO项目，尤其是GEOflow。\n\n②同时把姚老师以前的文章都看一下，深度学习一下GEO的内容。\n\n③了解下GEO的同行们都是怎么做的，多问多学\n\n④把社媒的一些资料换成GEO相关的（抖音、小红书、视频号，b站）\n\n⑤准备做一些系列性的GEO视频（提前先准备好稿子）\n\n⑥组建GEO社群，多方面打造，积累资源。\n\n5、准备好稿子的素材，等出院后开始拍摄。",
+    "tags": [
+      "AI",
+      "自媒体",
+      "技术"
+    ],
+    "cover": "https://mmbiz.qpic.cn/mmbiz_jpg/2Zia5tWSYZCoSb3AVH2I9IZe8VLnFEOxBq1ibOlDCRYEADaiaVANJKpwJQGuka05zrQOk0ZmxXFXCywJ4eQdtYf04wRBYtRncP0TmRoQpWRl0I/0?wx_fmt=jpeg",
+    "images": [
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCrFEYibxgcwOhswtc80iaNHjuSjic0icHYsZxHaXbz4BSq8icWYia9U5Jiak0gsrib3lMwrMDVibMovqGsMkQ4SrfoO2LraESolOEQAnB7E/640?wx_fmt=png&from=appmsg",
+      "https://mmbiz.qpic.cn/sz_mmbiz_png/2Zia5tWSYZCqOlhmaWMUue1QiahXE7fn3Sz9ZkDqKPKLqwl1nb0ErmtI5fsicJWGPTXAgjlaib1KA0pZ1tRD3u2KnJuboyGvkLfGQMmqnj9bujc/640?wx_fmt=png&from=appmsg"
+    ],
+    "publishedAt": "2026-10-20",
+    "slug": "day-193",
+    "sourceUrl": "https://mp.weixin.qq.com/s/HkYnXwWz7MjqGBLN8nTa-w"
+  },
+  {
     "day": 192,
     "title": "一人公司纪实突破 400 Star！",
     "summary": "今天，我的「一人公司纪实」GitHub 项目突破 400 Star 了，目前是 434。很开心！",

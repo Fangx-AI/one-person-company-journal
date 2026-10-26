@@ -8,6 +8,11 @@
 
 ## 2026
 
+- [No.197 三个 AI Agent 一起开发，终于有了“总指挥”](docs/2026/day-197.md)
+- [No.196 2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）](docs/2026/day-196.md)
+- [No.195 GEO确定是有效果的](docs/2026/day-195.md)
+- [No.194 Deepseek再使用](docs/2026/day-194.md)
+- [No.193 本周汇总任务](docs/2026/day-193.md)
 - [No.192 一人公司纪实突破 400 Star！](docs/2026/day-192.md)
 - [No.191 Geo-doctor](docs/2026/day-191.md)
 - [No.190 纷纷开且落](docs/2026/day-190.md)
