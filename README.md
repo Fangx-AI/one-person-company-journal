@@ -212,7 +212,6 @@
 | ✉️ 邮箱 | [953995271@qq.com](mailto:953995271@qq.com) |
 | 💬 微信 | `Morigest` |
 | 📣 公众号 / 抖音 | 方鑫三个金 |
-| 📚 小报童 | [AIGC 财富自由之路](https://xiaobot.net/p/DuzhouMoney?refer=70e80a00-8534-4603-a6dd-69d97e47dc9c) |
 
 > 先做一个真实能跑起来的版本，再一点点把它变好。
 
