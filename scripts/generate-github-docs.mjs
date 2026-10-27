@@ -188,14 +188,14 @@ export function buildReadme(entries) {
   const latest = ordered.slice(0, 5).map((entry) => `- ${link(entry)}${entry.publishedAt ? ` · ${entry.publishedAt}` : ''}`).join('\n')
   const groups = new Map()
   for (const entry of ordered) {
-    const week = String(entry.day).startsWith('W')
-    const start = Math.floor((Number(entry.day) - 1) / 50) * 50 + 1
-    const label = week ? '周报' : `第 ${start}—${start + 49} 期`
+    const day = String(entry.day).startsWith('W') ? Number(String(entry.day).slice(1)) * 7 : Number(entry.day)
+    const start = Math.floor((day - 1) / 50) * 50 + 1
+    const label = `第 ${start}—${start + 49} 期`
     if (!groups.has(label)) groups.set(label, [])
     groups.get(label).push(entry)
   }
   const archive = [...groups].map(([label, items]) => [
-    '<details>', `<summary>${label} · ${items.length} 篇</summary>`, '',
+    '<details>', `<summary>${label}</summary>`, '',
     ...items.map((entry) => `- ${link(entry)}`), '', '</details>',
   ].join('\n')).join('\n\n')
 
@@ -214,8 +214,6 @@ export function buildReadme(entries) {
 ${latest}
 
 ## 全部文章
-
-共 ${entries.length} 篇记录，按期号归档；周报单独列出。展开后点击标题即可阅读。
 
 ${archive}
 

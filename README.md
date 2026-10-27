@@ -18,10 +18,8 @@
 
 ## 全部文章
 
-共 159 篇记录，按期号归档；周报单独列出。展开后点击标题即可阅读。
-
 <details>
-<summary>第 151—200 期 · 47 篇</summary>
+<summary>第 151—200 期</summary>
 
 - [No.197 三个 AI Agent 一起开发，终于有了“总指挥”](docs/2026/day-197.md)
 - [No.196 2026 GEO 白皮书：AI 搜索优化的格局、商业模式与收费全拆解（20 万字）](docs/2026/day-196.md)
@@ -74,7 +72,7 @@
 </details>
 
 <details>
-<summary>第 101—150 期 · 45 篇</summary>
+<summary>第 101—150 期</summary>
 
 - [No.150 如何超过90%的创作者](docs/2026/day-150.md)
 - [No.149 保持好状态](docs/2026/day-149.md)
@@ -125,7 +123,7 @@
 </details>
 
 <details>
-<summary>第 51—100 期 · 20 篇</summary>
+<summary>第 51—100 期</summary>
 
 - [No.100 一人公司纪实继续更新，Claude 限额与 Codex 思考](docs/2026/day-100.md)
 - [No.99 黄仁勋演讲，AI 革命与一人公司的机会](docs/2026/day-99.md)
@@ -147,12 +145,6 @@
 - [Day 75 忽略情绪，持续做事](docs/2026/day-75.md)
 - [Day 73 但行好事，莫问前程](docs/2026/day-73.md)
 - [Day 72 拍视频、写文章、个人网站上线](docs/2026/day-72.md)
-
-</details>
-
-<details>
-<summary>周报 · 3 篇</summary>
-
 - [周报 No.10 竭尽所能去提升自己的价值感](docs/2026/week-10.md)
 - [周报 No.9 极端的厌恶带来极端的成长](docs/2026/week-9.md)
 - [周报 No.8 改用周报形式更新](docs/2026/week-8.md)
@@ -160,7 +152,7 @@
 </details>
 
 <details>
-<summary>第 1—50 期 · 44 篇</summary>
+<summary>第 1—50 期</summary>
 
 - [Day 48 五条口播全平台上线](docs/2026/day-48.md)
 - [Day 47 五条口播全网发布](docs/2026/day-47.md)
