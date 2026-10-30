@@ -11,6 +11,7 @@ const assetsDir = path.join(rootDir, 'docs', 'assets')
 const readmePath = path.join(rootDir, 'README.md')
 
 const readmeTitleOverrides = new Map([
+  ['day-200', 'No.200 一人公司纪实'],
   ['day-94', 'No.94 一人公司大总结'],
   ['day-93', 'No.93 中转站合作邀请与自动化推广'],
   ['day-92', 'No.92 五一假期工作汇报'],
