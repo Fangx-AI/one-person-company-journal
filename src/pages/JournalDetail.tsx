@@ -8,6 +8,8 @@ import {
   fetchLatestJournalIndex,
   getCachedJournalEntry,
   getCachedJournalIndex,
+  getPrerenderedJournalData,
+  type PrerenderedJournalData,
 } from '../utils/journalLoader'
 
 function ensureMetaByName(name: string) {
@@ -77,11 +79,16 @@ function EntryBody({ entry }: { entry: ResolvedJournalEntry }) {
   )
 }
 
-export function JournalDetail() {
+export function JournalDetail({
+  prerenderData,
+}: {
+  prerenderData?: PrerenderedJournalData
+} = {}) {
   const { slug = '' } = useParams()
-  const [index, setIndex] = useState<JournalIndexEntry[]>([])
-  const [entry, setEntry] = useState<ResolvedJournalEntry | null>(null)
-  const [loading, setLoading] = useState(true)
+  const initialData = prerenderData ?? getPrerenderedJournalData(slug)
+  const [index, setIndex] = useState<JournalIndexEntry[]>(initialData?.index ?? [])
+  const [entry, setEntry] = useState<ResolvedJournalEntry | null>(initialData?.entry ?? null)
+  const [loading, setLoading] = useState(!initialData)
   const [loadError, setLoadError] = useState<string | null>(null)
 
   useEffect(() => {

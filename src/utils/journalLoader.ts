@@ -24,6 +24,18 @@ const ENTRY_CACHE_PREFIX = 'fxin-journal-entry-v1:'
 // localStorage forever.
 const LEGACY_FULL_CACHE_KEY = 'fxin-journal-entries-v1'
 
+export interface PrerenderedJournalData {
+  slug: string
+  entry: ResolvedJournalEntry
+  index: JournalIndexEntry[]
+}
+
+declare global {
+  interface Window {
+    __PRERENDERED_JOURNAL__?: PrerenderedJournalData
+  }
+}
+
 function isBrowser() {
   return typeof window !== 'undefined' && typeof window.localStorage !== 'undefined'
 }
@@ -116,6 +128,12 @@ export function getCachedJournalEntry(slug: string): ResolvedJournalEntry | null
   // Resolve in case the cached payload pre-dates the slug field guarantee.
   const [resolved] = resolveJournalEntries([cached])
   return resolved ?? null
+}
+
+export function getPrerenderedJournalData(slug: string): PrerenderedJournalData | null {
+  if (!isBrowser()) return null
+  const data = window.__PRERENDERED_JOURNAL__
+  return data?.slug === slug ? data : null
 }
 
 export async function fetchJournalEntryBySlug(slug: string): Promise<ResolvedJournalEntry> {

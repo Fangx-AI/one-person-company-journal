@@ -1,12 +1,11 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom'
 import { Home } from './pages/Home'
+import { JournalDetail } from './pages/JournalDetail'
 import { SiteLayout } from './components/SiteLayout'
+import type { PrerenderedJournalData } from './utils/journalLoader'
 
 const Journal = lazy(() => import('./pages/Journal').then((m) => ({ default: m.Journal })))
-const JournalDetail = lazy(() =>
-  import('./pages/JournalDetail').then((m) => ({ default: m.JournalDetail })),
-)
 const Skills = lazy(() => import('./pages/Skills').then((m) => ({ default: m.Skills })))
 const Products = lazy(() => import('./pages/Products').then((m) => ({ default: m.Products })))
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
@@ -36,23 +35,29 @@ function NotFound() {
   )
 }
 
+export function AppRoutes({ prerenderData }: { prerenderData?: PrerenderedJournalData } = {}) {
+  return (
+    <SiteLayout>
+      <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/journal" element={<Journal />} />
+          <Route path="/journal/:slug" element={<JournalDetail prerenderData={prerenderData} />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/reposts" element={<Navigate to="/skills" replace />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </SiteLayout>
+  )
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <SiteLayout>
-        <Suspense fallback={<LoadingFallback />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/journal" element={<Journal />} />
-            <Route path="/journal/:slug" element={<JournalDetail />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/reposts" element={<Navigate to="/skills" replace />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </SiteLayout>
+      <AppRoutes />
     </BrowserRouter>
   )
 }

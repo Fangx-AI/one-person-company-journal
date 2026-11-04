@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/prerender-journal.mjs",
     "typecheck": "tsc -b --noEmit",
     "lint": "eslint .",
     "validate:content": "node scripts/validate-content.mjs",
