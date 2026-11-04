@@ -14,9 +14,9 @@ const STATUS_LABELS: Record<SkillStatus, string> = {
 
 const STATUS_ORDER: SkillStatus[] = ['public', 'experiment', 'personal']
 
-export function Skills() {
-  const [entries, setEntries] = useState<SkillEntry[]>([])
-  const [loading, setLoading] = useState(true)
+export function Skills({ initialEntries }: { initialEntries?: SkillEntry[] } = {}) {
+  const [entries, setEntries] = useState<SkillEntry[]>(initialEntries ?? [])
+  const [loading, setLoading] = useState(!initialEntries)
   const [loadError, setLoadError] = useState<string | null>(null)
 
   useEffect(() => {

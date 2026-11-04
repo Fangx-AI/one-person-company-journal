@@ -1,18 +1,24 @@
-import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom'
 import { Home } from './pages/Home'
+import { Journal } from './pages/Journal'
 import { JournalDetail } from './pages/JournalDetail'
+import { Skills } from './pages/Skills'
+import { Products } from './pages/Products'
+import { About } from './pages/About'
 import { SiteLayout } from './components/SiteLayout'
 import type { PrerenderedJournalData } from './utils/journalLoader'
+import type { JournalIndexEntry } from './types/journal'
+import type { SkillEntry } from './types/skill'
 
-const Journal = lazy(() => import('./pages/Journal').then((m) => ({ default: m.Journal })))
-const Skills = lazy(() => import('./pages/Skills').then((m) => ({ default: m.Skills })))
-const Products = lazy(() => import('./pages/Products').then((m) => ({ default: m.Products })))
-const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
+export interface PrerenderedSiteData {
+  journalIndex?: JournalIndexEntry[]
+  skills?: SkillEntry[]
+}
 
-// Minimal cream canvas while a route chunk loads. No spinner — chunks are tiny.
-function LoadingFallback() {
-  return <div className="min-h-[60vh]" style={{ background: 'var(--color-bg)' }} />
+declare global {
+  interface Window {
+    __PRERENDERED_SITE_DATA__?: PrerenderedSiteData
+  }
 }
 
 function NotFound() {
@@ -35,21 +41,25 @@ function NotFound() {
   )
 }
 
-export function AppRoutes({ prerenderData }: { prerenderData?: PrerenderedJournalData } = {}) {
+export function AppRoutes({
+  prerenderData,
+  siteData,
+}: {
+  prerenderData?: PrerenderedJournalData
+  siteData?: PrerenderedSiteData
+} = {}) {
   return (
     <SiteLayout>
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/journal" element={<Journal />} />
-          <Route path="/journal/:slug" element={<JournalDetail prerenderData={prerenderData} />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/reposts" element={<Navigate to="/skills" replace />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/journal" element={<Journal initialEntries={siteData?.journalIndex} />} />
+        <Route path="/journal/:slug" element={<JournalDetail prerenderData={prerenderData} />} />
+        <Route path="/skills" element={<Skills initialEntries={siteData?.skills} />} />
+        <Route path="/reposts" element={<Navigate to="/skills" replace />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </SiteLayout>
   )
 }
@@ -57,7 +67,7 @@ export function AppRoutes({ prerenderData }: { prerenderData?: PrerenderedJourna
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <AppRoutes siteData={window.__PRERENDERED_SITE_DATA__} />
     </BrowserRouter>
   )
 }

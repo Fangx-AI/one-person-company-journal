@@ -34,8 +34,10 @@ function getWeekDateRange(entries: JournalIndexEntry[], weekNumber: number) {
   )
 }
 
-export function Journal() {
-  const [entries, setEntries] = useState<JournalIndexEntry[]>(() => getCachedJournalIndex())
+export function Journal({ initialEntries }: { initialEntries?: JournalIndexEntry[] } = {}) {
+  const [entries, setEntries] = useState<JournalIndexEntry[]>(
+    () => initialEntries ?? getCachedJournalIndex(),
+  )
   const [loading, setLoading] = useState(entries.length === 0)
   const [loadError, setLoadError] = useState<string | null>(null)
 
