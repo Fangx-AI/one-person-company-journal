@@ -21,6 +21,7 @@ const sampleEntry = {
 }
 
 assert.equal(imageExtensionFromUrl('https://example.com/a.jpg?x=1'), '.jpg')
+assert.equal(imageExtensionFromUrl('/images/day-203/image-01.webp'), '.webp')
 assert.equal(imageExtensionFromUrl('https://example.com/a?wx_fmt=jpeg'), '.jpg')
 assert.equal(imageExtensionFromUrl('https://example.com/a?wx_fmt=png'), '.png')
 assert.equal(localImagePath(sampleEntry, 0, sampleEntry.images[0]), '../assets/day-1/image-1.png')

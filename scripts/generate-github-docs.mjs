@@ -1,4 +1,4 @@
-import { mkdir, rm, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, rm, writeFile } from 'node:fs/promises'
 import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -82,7 +82,7 @@ export function readJournalEntries() {
 }
 
 export function imageExtensionFromUrl(url) {
-  const parsed = new URL(url)
+  const parsed = new URL(url, 'https://fxin.cc')
   const wxFormat = parsed.searchParams.get('wx_fmt')
   if (wxFormat) {
     const normalized = wxFormat.toLowerCase()
@@ -240,6 +240,15 @@ ${archive}
 
 async function downloadImage(url, outputPath) {
   if (existsSync(outputPath)) return
+
+  if (url.startsWith('/images/')) {
+    const publicDir = path.join(rootDir, 'public')
+    const sourcePath = path.resolve(publicDir, `.${url}`)
+    if (!sourcePath.startsWith(`${publicDir}${path.sep}`)) throw new Error('Invalid local image path')
+    await mkdir(path.dirname(outputPath), { recursive: true })
+    await copyFile(sourcePath, outputPath)
+    return
+  }
 
   const response = await fetch(url, {
     headers: {
