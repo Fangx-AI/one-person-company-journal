@@ -11,6 +11,14 @@ const numberedSections = new Set([
 ].map((day) => `day-${day}`))
 
 export const articleLayouts = {
+  'day-204': {
+    headings: h2(
+      '第一步：找到远程控制入口',
+      '第二步：登录账号，连接电脑上的 Agent',
+      '第三步：安装手机端，再扫码配对',
+      '第四步：确认手机里能看到电脑和项目',
+    ),
+  },
   'day-203': {
     headings: h2(
       '上一篇，我先解决了“看不看得到”',
